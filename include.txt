@@ -1,0 +1,8 @@
+Forum_account.Autojoining version=1
+Forum_account.HudGroups version=10
+Forum_account.PixelMovement version=24
+Forum_account.Overlays version=8
+Forum_account.Keyboard version=5
+Forum_account.Text version=3
+Forum_account.Hub version=4
+Forum_account.IconProcessor version=3

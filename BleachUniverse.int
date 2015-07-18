@@ -1,0 +1,11 @@
+// BEGIN_INTERNALS
+/*
+LAST_COMPILE_TIME: 1437216653
+DIR: demo Lib 
+AUTO_FILE_DIR: ON
+MAP_ICON_TYPE: 0
+LAST_COMPILE_VERSION: 507.1280
+WINDOW: player-chat.dm;player-abilities.dm;player-leveling.dm;hud.dm;player-targeting.dm;combat.dm;player-procs.dm;player-saving.dm;demo\abilities.dm;demo\combat.dm;demo\mobs.dm;demo\custom-hud.dm;demo\items.dmi;demo\turfs.dmi;demo\title-screen.jpg;hud-mob-selection.dm
+FILE: demo\combat.dm
+*/
+// END_INTERNALS
