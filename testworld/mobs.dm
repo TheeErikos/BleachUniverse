@@ -26,7 +26,7 @@ AbilityMenu
 
 
 mob
-	icon = 'mobsbase.dmi'
+	icon = 'player-human.dmi'
 	base_state = "human2"
 
 	pwidth = 16
@@ -114,6 +114,7 @@ mob
 		get_item(new /item/armor())
 		get_item(new /item/helmet())
 		get_item(new /item/dagger())
+		get_item(new /item/hollowmask1())
 
 		// give them two health potions, these will appear
 		// in a single stack in their inventory

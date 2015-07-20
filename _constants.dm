@@ -96,7 +96,7 @@ Constants
 			MUSIC_CHANNEL = 1000
 
 			// The number of characters a player can have
-			SAVE_SLOTS = 1
+			SAVE_SLOTS = 3
 
 			// 1 for client-side savefiles, 0 for server-side
 			CLIENT_SIDE_SAVING = 0

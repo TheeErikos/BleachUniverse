@@ -85,7 +85,7 @@ item
 			m.remove(src)
 			m.defense -= 2
 
-	vaizordmask
+	hollowmask1
 		name = "Vaizord Mask"
 		icon_state = "mask1"
 		description = "+100 Power Put this on and go crazy!"

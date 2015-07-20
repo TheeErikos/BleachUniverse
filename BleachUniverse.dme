@@ -11,19 +11,15 @@
 // BEGIN_FILE_DIR
 #define FILE_DIR .
 #define FILE_DIR "icon-generation"
+#define FILE_DIR "Icons"
+#define FILE_DIR "Icons/Human"
+#define FILE_DIR "Icons/InvertHuman"
+#define FILE_DIR "Icons/Sources"
+#define FILE_DIR "Icons/Wearables"
 #define FILE_DIR "Resources"
-#define FILE_DIR "Resources/Eviofau.GameInaDay"
-#define FILE_DIR "Resources/Eviofau.GameInaDay/Black Sea"
-#define FILE_DIR "Resources/Xerse.RiseofHeroesSource"
-#define FILE_DIR "Resources/Xerse.RiseofHeroesSource/Rise of Heroes"
-#define FILE_DIR "Resources/Combat System"
-#define FILE_DIR "Resources/Combat System/Combat System"
+#define FILE_DIR "Resources/tweakpng-1.4.6"
 #define FILE_DIR "testworld"
 #define FILE_DIR "testworld/sound"
-#define FILE_DIR "wip"
-#define FILE_DIR "wip/imgtemp"
-#define FILE_DIR "wip/vaizord"
-#define FILE_DIR "wip/vaizord/masks"
 // END_FILE_DIR
 
 // BEGIN_PREFERENCES

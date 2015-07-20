@@ -1,11 +1,11 @@
 // BEGIN_INTERNALS
 /*
-LAST_COMPILE_TIME: 1437409435
-DIR: icon-generation Resources Resources\Eviofau.GameInaDay Resources\Xerse.RiseofHeroesSource testworld 
+LAST_COMPILE_TIME: 1437418388
+DIR: icon-generation Icons Icons\InvertHuman testworld 
 AUTO_FILE_DIR: ON
 MAP_ICON_TYPE: 0
-LAST_COMPILE_VERSION: 507.1286
-WINDOW: icon-generation\base-armor.dmi;testworld\sword.dmi;hud-conditions.dm;testworld\interface.dmf;testworld\abilities.dm;testworld\statbox.dm;testworld\turfs.dm;BleachUniverse.dme;testworld\testarea.dmm;testworld\mobs.dm
-FILE: testworld\mobs.dm
+LAST_COMPILE_VERSION: 507.1280
+WINDOW: Icons\InvertHuman\inverthuman.dmi;testworld\mobs.dmi;Icons\player-human.dmi;testworld\mobs.dm;testworld\npcs.dm;testworld\skills.dm;testworld\enemies.dm
+FILE: testworld\enemies.dm
 */
 // END_INTERNALS
