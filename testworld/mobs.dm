@@ -67,6 +67,7 @@ mob
 		attack = 5
 		agility = 5
 		accuracy = 5
+		T = 0
 
 		tmp/slowed = 0
 
@@ -133,8 +134,13 @@ mob
 
 
 	Login()
-		..()
-		music('music.xm')
+		if(T==0)
+			..()
+			music('mainmenu.wav')
+			T=1
+		else
+			..()
+			music('mainmenu.wav', 0)
 
 
 	action()
