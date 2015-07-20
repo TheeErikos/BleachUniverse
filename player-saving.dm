@@ -4,8 +4,8 @@
 // Author:  Forum_account
 //
 // Contents:
-//   This file contains procs to manage the player's
-//   saved characters. It also manages the loading of
+//   This file contains procs to reiatsuge the player's
+//   saved characters. It also reiatsuges the loading of
 //   characters and the ability to select a character,
 //   making it easy to develop a character selection
 //   screen.
@@ -102,6 +102,7 @@ client
 			sound_volume(sv)
 			music_volume(mv)
 			screen_size(ss)
+
 
 			for(var/mob/m in mobs)
 				m.loc = null

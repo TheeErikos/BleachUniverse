@@ -33,7 +33,7 @@ MobSelection
 		add(48, 16, "inventory-back", width = 4, height = Constants.SAVE_SLOTS, layer = layer + 1)
 
 		// Add the title on the window:
-		add(16, (Constants.SAVE_SLOTS + 1) * Constants.ICON_HEIGHT, "", maptext_width = 160, maptext = "<text align=center><b>Character Selection</b></text>", layer = layer + 2)
+		add(16, (Constants.SAVE_SLOTS + 1) * 32, "", maptext_width = 160, maptext = "<text align=center><b>Character Selection</b></text>", layer = layer + 2)
 
 		cursor = add(16, 16, "inventory-cursor", layer = layer + 5)
 		set_index(Constants.SAVE_SLOTS)

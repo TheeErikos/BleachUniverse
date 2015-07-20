@@ -1,0 +1,142 @@
+"a" = (/turf/lightwall5,/area)
+"b" = (/obj/torch,/turf/lightwall5,/area)
+"c" = (/obj/tablet,/turf/lightwall5,/area)
+"d" = (/turf/pinkstone,/area)
+"e" = (/mob/enemies/blight,/turf/pinkstone,/area)
+"f" = (/turf/carpet7,/area)
+"g" = (/turf/carpet8,/area)
+"h" = (/turf/carpet9,/area)
+"i" = (/obj/bones,/turf/pinkstone,/area)
+"j" = (/obj/grave1,/turf/pinkstone,/area)
+"k" = (/turf/carpet4,/area)
+"l" = (/turf/carpet5,/area)
+"m" = (/turf/carpet6,/area)
+"n" = (/obj/candelabra,/turf/carpet5,/area)
+"o" = (/obj/candelabra,/turf/pinkstone,/area)
+"p" = (/turf/warpbookturf,/area)
+"q" = (/mob/enemies/ghoul,/turf/pinkstone,/area)
+"r" = (/mob/enemies/ghoul,/turf/carpet4,/area)
+"s" = (/mob/enemies/wraith,/turf/pinkstone,/area)
+"t" = (/obj/statue5,/turf/pinkstone,/area)
+"u" = (/obj/statue2,/turf/pinkstone,/area)
+"v" = (/mob/enemies/wraith,/turf/carpet5,/area)
+"w" = (/obj/bones,/turf/carpet6,/area)
+"x" = (/mob/enemies/wraith,/turf/carpet4,/area)
+"y" = (/mob/enemies/ghost,/turf/pinkstone,/area)
+"z" = (/mob/enemies/fallenangel,/turf/pinkstone,/area)
+"A" = (/obj/column4,/turf/pinkstone,/area)
+"B" = (/obj/column1,/turf/pinkstone,/area)
+"C" = (/mob/enemies/skeleton,/turf/pinkstone,/area)
+"D" = (/mob/enemies/zombie,/turf/carpet4,/area)
+"E" = (/mob/enemies/zombie,/turf/pinkstone,/area)
+"F" = (/mob/enemies/skeleton,/turf/carpet6,/area)
+"G" = (/mob/enemies/ghost,/turf/carpet5,/area)
+"H" = (/mob/enemies/fallenangel,/turf/carpet5,/area)
+"I" = (/mob/enemies/ghost,/turf/carpet6,/area)
+"J" = (/turf/pinkstone,/turf/grave3out,/area)
+"K" = (/turf/grave3,/area)
+"L" = (/turf/carpet2,/area)
+"M" = (/turf/carpet3,/area)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaabacabaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaddddddddeddddddaaaaa
+aaaaadeddddfghddddddaaaaa
+aaaaaddidjdklmdjddddaaaaa
+aaaaaddddddklmdddddeaaaaa
+aaaaaddjdddklmiddjddaaaaa
+aaaaaddddedknmddddddaaaaa
+aaaaajdddddklmdedddjaaaaa
+aaaaaddddddklmddddddaaaaa
+aaaaaddddodkpmdoddddaaaaa
+aaaaaddddddklmddddddaaaaa
+aaaaajdqdidklmdddddjaaaaa
+aaaaaddddddknmddddddaaaaa
+aaaaaddjdddklmddqjdiaaaaa
+aaaaaddddddklmddddddaaaaa
+aaaaaddddjdklmdjddddaaaaa
+aaaaaddddddklmdiddddaaaaa
+aaaaaddddddrlmddddddaaaaa
+aaaaaddddddklmddddddaaaaa
+aaaaadddsddklmddddddaaaaa
+aaaaaddddtdklmdtddddaaaaa
+aaaaaddidudklmdudsddaaaaa
+aaaaaddddddklmddddddaaaaa
+aaaaaddddddklmddddddaaaaa
+aaaaaddddddkvmddddidaaaaa
+aaaaadsddddklmddddddaaaaa
+aaaaaddddtdklwdtddddaaaaa
+aaaaaddddudklmduddddaaaaa
+aaaaaddddddklmddddsdaaaaa
+aaaaasdddddklmddddddaaaaa
+aaaaaddddddxlmddddddaaaaa
+aaaaaidddddklmddddddaaaaa
+aaaaaddddtdklmdtddddaaaaa
+aaaaaddddudklmduddddaaaaa
+aaaaaddddddklmddddddaaaaa
+aaaaayddddsklmdddzddaaaaa
+aaaaaddddddklwdddddiaaaaa
+aaaaaddddddklmddddddaaaaa
+aaaaaddddAdklmdAddddaaaaa
+aaaaaddddBdklmdBddddaaaaa
+aaaaaddddddklmyddddyaaaaa
+aaaaaddddddklmddddddaaaaa
+aaaaaddzddiklmddddddaaaaa
+aaaaaddddddklmddddddaaaaa
+aaaaaddddAdklmdAddzdaaaaa
+aaaaaddddBdklmdBCdddaaaaa
+aaaaaddCdddDlmddddEdaaaaa
+aaaaaddddddklmddddddaaaaa
+aaaaaddddddklmddddddaaaaa
+aaaaaddddddklmddddddaaaaa
+aaaaaddEdAdklFdAdEidaaaaa
+aaaaaddddBdklmdBddddaaaaa
+aaaaaddddddklmddddddaaaaa
+aaaaaddddddklmddddddaaaaa
+aaaaaddCdddklmddddddaaaaa
+aaaaadiddddDlmddddddaaaaa
+aaaaaddddtdklmitdCddaaaaa
+aaaaaddddudklmduddddaaaaa
+aaaaaddEdddklmCdddddaaaaa
+aaaaaddddddklmddddEdaaaaa
+aaaaaddddddklmddddddaaaaa
+aaaaaddddddklmddddddaaaaa
+aaaaadCddtdklmdtddddaaaaa
+aaaaaddddudDlmduddddaaaaa
+aaaaadddddiklmddddddaaaaa
+aaaaaddddddklmddddCdaaaaa
+aaaaaddddddklmddddddaaaaa
+aaaaadddCddklmddddddaaaaa
+aaaaaddddtdklmdtEdddaaaaa
+aaaaadzddudklmduddddaaaaa
+aaaaaddddddkGmdddzddaaaaa
+aaaaaddddddklmdddddiaaaaa
+aaaaaddddddklmddddddaaaaa
+aaaaadddddzklmddddddaaaaa
+aaaaaddddAdklmdAddddaaaaa
+aaaaaddddBdklmdBddddaaaaa
+aaaaaddydddklmddddydaaaaa
+aaaaaddddddkHmddddddaaaaa
+aaaaaddddddklmddddddaaaaa
+aaaaaddddddklmddddddaaaaa
+aaaaaddddAdklmdAddddaaaaa
+aaaaaddddBdklmdBydzdaaaaa
+aaaaaddddydklmddddddaaaaa
+aaaaadyddddklmdddddyaaaaa
+aaaaaddddddklIddddddaaaaa
+aaaaaddddddklmddddddaaaaa
+aaaaaddddAdklmdAddddaaaaa
+aaaaaddydBdklmdBdyddaaaaa
+aaaaaddddddklmddddddaaaaa
+aaaaadddddJKLMddddddaaaaa
+aaaaadddddddddddddddaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaa
+"}

@@ -5,7 +5,7 @@
 //
 // Contents:
 //   This file defines the /Party object which is
-//   used to manage groups of players.
+//   used to reiatsuge groups of players.
 
 Party
 	var

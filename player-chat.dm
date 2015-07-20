@@ -4,7 +4,7 @@
 // Author:  Forum_account
 //
 // Contents:
-//   This file contains the code to manage player chat.
+//   This file contains the code to reiatsuge player chat.
 
 client
 	script = "<style>a.blank { text-decoration: none; color: #fff; } a.private { text-decoration: none; color: #FFFF90; } a.normal { text-decoration: none; color: #8090E0; } </style>"

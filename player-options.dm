@@ -3,7 +3,7 @@ client
 	var
 		sound_volume = 1
 		music_volume = 1
-		screen_size = 2
+		screen_size = 1
 
 	proc
 		sound_volume(v)
@@ -32,7 +32,7 @@ client
 
 			screen_size = s
 
-			var/width = 512 * screen_size + 240
-			var/height = 384 * screen_size
+			var/width = 400 * screen_size + 480
+			var/height = 380 * screen_size
 
 			winset(src, "default", "size=[width]x[height]")

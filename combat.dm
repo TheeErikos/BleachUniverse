@@ -22,8 +22,8 @@ mob
 		health = 0
 		max_health = 0
 
-		mana = 0
-		max_mana = 0
+		reiatsu = 0
+		max_reiatsu = 0
 
 		tmp/Overlay/loot_indicator
 
@@ -50,7 +50,7 @@ mob
 	// these are helper procs for creating ability effects
 	proc
 
-		// procs for managing health / mana
+		// procs for reiatsuging health / reiatsu
 		lose_health(h, mob/attacker = null)
 			set_health(health - h, attacker)
 
@@ -89,36 +89,36 @@ mob
 			if(health > max_health)
 				set_health(max_health)
 
-		lose_mana(m)
-			set_mana(mana - m)
+		lose_reiatsu(m)
+			set_reiatsu(reiatsu - m)
 
-		gain_mana(m)
-			set_mana(mana + m)
+		gain_reiatsu(m)
+			set_reiatsu(reiatsu + m)
 
-		set_mana(m)
+		set_reiatsu(m)
 			if(m < 0) m = 0
-			if(m > max_mana) m = max_mana
+			if(m > max_reiatsu) m = max_reiatsu
 
-			mana = m
+			reiatsu = m
 
-			if(mana_meter)
-				mana_meter.update()
+			if(reiatsu_meter)
+				reiatsu_meter.update()
 
-			mana_changed()
+			reiatsu_changed()
 
-		lose_max_mana(h)
-			set_max_mana(max_mana - h)
+		lose_max_reiatsu(h)
+			set_max_reiatsu(max_reiatsu - h)
 
-		gain_max_mana(h)
-			set_max_mana(max_mana + h)
+		gain_max_reiatsu(h)
+			set_max_reiatsu(max_reiatsu + h)
 
-		set_max_mana(h)
+		set_max_reiatsu(h)
 			if(h < 0) h = 0
 
-			max_mana = h
+			max_reiatsu = h
 
-			if(mana > max_mana)
-				set_mana(max_mana)
+			if(reiatsu > max_reiatsu)
+				set_reiatsu(max_reiatsu)
 
 		die(mob/attacker)
 
@@ -147,7 +147,7 @@ mob
 			density = 1
 
 			set_health(max_health)
-			set_mana(max_mana)
+			set_reiatsu(max_reiatsu)
 
 			// execute the "respawned" event
 			respawned()

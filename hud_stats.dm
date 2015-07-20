@@ -1,0 +1,35 @@
+StatBox
+	parent_type = /HudBox
+
+	var
+		HudObject/title
+		HudObject/money
+		HudObject/experience
+		HudObject/power
+		HudObject/reiatsu
+
+	New(mob/m)
+		..(m)
+
+		box(6, 8)
+
+		owner = m
+
+		// display your level, class, money, and experience
+		title = add(12, 48, maptext_width = width * 32 - 24, layer = layer + 1)
+		money = add(12, 38, maptext_width = width * 32 - 24, layer = layer + 1)
+		experience = add(12, 26, maptext_width = width * 32 - 24, layer = layer + 1)
+		power = add(12,16, maptext_width = width * 32 - 24, layer = layer + 1)
+		reiatsu = add(12,6, maptext_width = width * 32 - 24, layer = layer + 1)
+
+		refresh()
+
+		pos(Constants.VIEW_WIDTH * Constants.ICON_WIDTH - 128 - 12, 12)
+
+	proc
+		refresh()
+			title.maptext = "<b>[owner.description()]</b>"
+			money.maptext = "Money: $[owner.money]"
+			experience.maptext = "XP: [owner.experience] / [owner.experience_needed]"
+			power.maptext = "Power: [owner.power]"
+			reiatsu.maptext = "Reiatsu: [owner.reiatsu] / [owner.max_reiatsu]"

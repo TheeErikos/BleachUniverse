@@ -4,7 +4,7 @@
 // Author:  Forum_account
 //
 // Contents:
-//   This file contains procs to manage the player's
+//   This file contains procs to reiatsuge the player's
 //   target, to show a marker over their target, and
 //   some helper procs used to get targets for abilities,
 

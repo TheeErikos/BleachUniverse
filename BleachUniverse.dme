@@ -10,9 +10,13 @@
 
 // BEGIN_FILE_DIR
 #define FILE_DIR .
-#define FILE_DIR "demo"
-#define FILE_DIR "demo/sound"
 #define FILE_DIR "icon-generation"
+#define FILE_DIR "testworld"
+#define FILE_DIR "testworld/sound"
+#define FILE_DIR "wip"
+#define FILE_DIR "wip/imgtemp"
+#define FILE_DIR "wip/vaizord"
+#define FILE_DIR "wip/vaizord/masks"
 // END_FILE_DIR
 
 // BEGIN_PREFERENCES
@@ -50,6 +54,7 @@
 #include "hud-quests.dm"
 #include "hud-shopkeeper.dm"
 #include "hud.dm"
+#include "hud_stats.dm"
 #include "items.dm"
 #include "medals.dm"
 #include "parties.dm"
@@ -66,19 +71,20 @@
 #include "player-targeting.dm"
 #include "projectiles.dm"
 #include "quests.dm"
-#include "demo\abilities.dm"
-#include "demo\combat.dm"
-#include "demo\conditions.dm"
-#include "demo\crafting.dm"
-#include "demo\custom-hud.dm"
-#include "demo\enemies.dm"
-#include "demo\help.dm"
-#include "demo\items.dm"
-#include "demo\medals.dm"
-#include "demo\mobs.dm"
-#include "demo\npcs.dm"
-#include "demo\turfs.dm"
-#include "demo\interface.dmf"
-#include "demo\map.dmm"
+#include "testworld\abilities.dm"
+#include "testworld\combat.dm"
+#include "testworld\conditions.dm"
+#include "testworld\crafting.dm"
+#include "testworld\custom-hud.dm"
+#include "testworld\enemies.dm"
+#include "testworld\help.dm"
+#include "testworld\items.dm"
+#include "testworld\medals.dm"
+#include "testworld\mobs.dm"
+#include "testworld\npcs.dm"
+#include "testworld\skills.dm"
+#include "testworld\turfs.dm"
+#include "testworld\interface.dmf"
+#include "testworld\testarea.dmm"
 // END_INCLUDE
 

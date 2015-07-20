@@ -53,8 +53,8 @@ InfoBar
 				if(owner.health_meter)
 					owner.health_meter.pos(8, Constants.VIEW_HEIGHT * Constants.ICON_HEIGHT - 24)
 
-				if(owner.mana_meter)
-					owner.mana_meter.pos(8, Constants.VIEW_HEIGHT * Constants.ICON_HEIGHT - 40)
+				if(owner.reiatsu_meter)
+					owner.reiatsu_meter.pos(8, Constants.VIEW_HEIGHT * Constants.ICON_HEIGHT - 40)
 
 				if(owner.conditions_bar)
 					owner.conditions_bar.pos(0, Constants.VIEW_HEIGHT * Constants.ICON_HEIGHT - 62)
@@ -77,8 +77,8 @@ InfoBar
 				if(owner.health_meter)
 					owner.health_meter.pos(8, Constants.VIEW_HEIGHT * Constants.ICON_HEIGHT - 40)
 
-				if(owner.mana_meter)
-					owner.mana_meter.pos(8, Constants.VIEW_HEIGHT * Constants.ICON_HEIGHT - 56)
+				if(owner.reiatsu_meter)
+					owner.reiatsu_meter.pos(8, Constants.VIEW_HEIGHT * Constants.ICON_HEIGHT - 56)
 
 				if(owner.conditions_bar)
 					owner.conditions_bar.pos(0, Constants.VIEW_HEIGHT * Constants.ICON_HEIGHT - 78)

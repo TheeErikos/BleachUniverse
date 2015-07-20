@@ -28,21 +28,22 @@ Constants
 			// used to open/close the loot and inventory panels
 			KEY_LOOT = "l"
 			KEY_INVENTORY = "i"
-			KEY_ABILITIES = "f"
+			KEY_ABILITIES = "n"
 			KEY_QUESTS = "q"
 			KEY_PARTY = "p"
 			KEY_INFO_BAR = "h"
+			KEY_STATS = "k"
 
 			// other controls
 			KEY_TARGET = "r"
 			KEY_TARGET_NON_ENEMIES = "shift"
 			KEY_CHAT = "return"
 			KEY_DELETE = "delete"
-			KEY_DROP = "d"
+			KEY_DROP = "x"
 
 			// these enable or disable HUD elements
 			USE_ABILITY_BAR = 1
-			USE_INFO_BOX = 1
+			USE_INFO_BOX = 0
 			USE_INVENTORY = 1
 			USE_LOOT_WINDOW = 1
 			USE_HEALTH_METER = 1
@@ -54,7 +55,7 @@ Constants
 			USE_MEDAL_DISPLAY = 1
 			USE_PARTY_DISPLAY = 1
 			USE_BANK = 1
-			USE_INFO_BAR = 1
+			USE_INFO_BAR = 0
 
 			// the size of the on-screen inventory
 			INVENTORY_DISPLAY_SIZE = "5x3"
@@ -66,8 +67,7 @@ Constants
 
 			// the info box appears after you've been standing
 			// still for two seconds.
-			INFO_BOX_DELAY = 20
-
+			INFO_BOX_DELAY = 10
 			// the size of an icon in pixels
 			ICON_WIDTH = 32
 			ICON_HEIGHT = 32
@@ -96,10 +96,10 @@ Constants
 			MUSIC_CHANNEL = 1000
 
 			// The number of characters a player can have
-			SAVE_SLOTS = 4
+			SAVE_SLOTS = 1
 
 			// 1 for client-side savefiles, 0 for server-side
 			CLIENT_SIDE_SAVING = 0
 
-			// this is the number of frames between health/mana regen events
-			REGEN_TICK_LENGTH = 40
+			// this is the number of frames between health/reiatsu regen events
+			REGEN_TICK_LENGTH = 50

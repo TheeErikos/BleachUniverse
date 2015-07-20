@@ -11,16 +11,16 @@ Version 10 (posted 07-07-2012)
  * You can use the mob.info_bar.add_message() proc to show a text string in
    the info bar. You can use the info_bar's remove_message() proc to remove
    a message. There are examples of this in demo\help.dm.
- * Added health and mana regeneration. The mob.health_regen() and mob.mana_regen()
+ * Added health and reiatsu regeneration. The mob.health_regen() and mob.reiatsu_regen()
    procs are called periodically when the mob is below their maximum value. By
    default these procs do nothing but you can override them to call gain_health()
-   and gain() mana. The sample game has an example of this. Note: the regen procs
-   are only called if you're below your max health/mana value.
+   and gain() reiatsu. The sample game has an example of this. Note: the regen procs
+   are only called if you're below your max health/reiatsu value.
  * Added the Constants.REGEN_TICK_LENGTH variable which is the number of frames
-   between calls to health_regen() and mana_regen(). It's default value is 40 so
+   between calls to health_regen() and reiatsu_regen(). It's default value is 40 so
    these procs are called once per second.
- * Increased the mana cost of Fireball in the sample game so you can notice
-   mana regeneration more easily.
+ * Increased the reiatsu cost of Fireball in the sample game so you can notice
+   reiatsu regeneration more easily.
  * Increased the default layer of objects created with the atom.effect() proc
    to be the atom's layer + 10 because there were still some layering issues
    with these objects and equipment overlays.
@@ -91,10 +91,10 @@ Version 10 (posted 07-07-2012)
  * Updated the current HUD interface elements to make use of the new vars and procs.
 
 Version 9 (posted 06-29-2012)
- * Checked for zero values in the health/mana meters to remove a runtime error
+ * Checked for zero values in the health/reiatsu meters to remove a runtime error
    that could occur.
- * Made the health/mana meters show one bubble even if your maximum value is
-   zero. If you've got 0/0 health or mana it'll show as one empty bubble.
+ * Made the health/reiatsu meters show one bubble even if your maximum value is
+   zero. If you've got 0/0 health or reiatsu it'll show as one empty bubble.
  * Checked for a null quests list in hud-quests.dm to avoid a runtime error
    that would occur when you pressed Q without having any quests.
  * Added the player bank which is shared across all characters the player has.
@@ -120,11 +120,11 @@ Version 9 (posted 06-29-2012)
    used to use istype(), which meant that consume_item(/item/potion) might delete
    an instance of /item/potion/super_potion. Now it uses the == operator so it has
    to be an exact match.
- * Adjusted the health and mana meter bubbles so the images are centered in the
+ * Adjusted the health and reiatsu meter bubbles so the images are centered in the
    icons.
  * Updated the party display and made it enabled by default. Party members are
    shown in the top-right corner of the screen. The list is updated as party
-   members come and go and their health/mana displays are updated as they change.
+   members come and go and their health/reiatsu displays are updated as they change.
  * You can press the P key to hide or show the party display.
  * In the sample game you can click on a mob to add or remove them from your
    party. This is done just so you can test out the party display.
@@ -183,7 +183,7 @@ Version 8 (posted 06-23-2012)
    specify a custom file to be used as the title screen. If the image is smaller
    than an icon it'll be tiled, otherwise it'll be centered in the screen. There's
    an example of how to do this in demo\mobs.dm but it's commented out by default.
- * Changed the way health and mana meters determine how many bubbles to show.
+ * Changed the way health and reiatsu meters determine how many bubbles to show.
    The relationship between the value and the number of bubbles is logarithmic
    now, so that 50 is five bubbles, 100 is six, and 500 is eight bubbles.
 
@@ -223,7 +223,7 @@ Version 7 (posted 06-15-2012)
  * Replaced the mob.saved_loc var with the mob.saved_x/y/z vars. Saving a
    reference to your turf could cause unwanted things to be saved. Instead we
    use the saved coordinates to get a reference to your saved loc at runtime.
- * Added the Quest datum and the mob procs to manage accepting quests, updating
+ * Added the Quest datum and the mob procs to reiatsuge accepting quests, updating
    the progress on quests, abandoning them, and completing them.
  * The Quest datum automatically has procs that are called when you kill an
    enemy, get an item, lose an item, or get killed. This makes it easy to
@@ -332,7 +332,7 @@ Version 5 (posted 06-09-2012)
  * Moved the enemy AI into the library to be the default ai() proc. Non-client
    mobs that don't override their ai() proc will wander, look for targets, and
    use their abilities to attack them.
- * Added some vars to manage the default enemy AI. Check enemy-ai.dm for more
+ * Added some vars to reiatsuge the default enemy AI. Check enemy-ai.dm for more
    details.
  * Made the font of the chat input field match the rest of the interface.
  * Removed the global Combat var. If you need to use it, define your own.
@@ -370,7 +370,7 @@ Version 4 (posted 06-04-2012)
  * Updated the on-screen shopkeeper to show prices. Also set the cost var
    of the items the shopkeeper sells.
  * Updated the shopkeeper NPC to display a greeting using the prompt() proc.
- * Added player-chat.dm which contains code to manage global chat.
+ * Added player-chat.dm which contains code to reiatsuge global chat.
  * Updated the interface to support player chat.
  * Made the info box disappear while you're moving and only appear after
    you've been standing still for two seconds.
@@ -393,8 +393,8 @@ Version 4 (posted 06-04-2012)
  * Added the mob.clear_cooldown() proc which clears each cooldown passed to it.
  * Added the set_max_health, gain_max_health, and lose_max_health procs which
    can be used to modify a mob's max_health value.
- * Added the gain_mana, lose_mana, gain_max_mana, lose_max_mana, and set_max_mana
-   proc which are used for modifying a mob's mana and max_mana values.
+ * Added the gain_reiatsu, lose_reiatsu, gain_max_reiatsu, lose_max_reiatsu, and set_max_reiatsu
+   proc which are used for modifying a mob's reiatsu and max_reiatsu values.
  * Expanded the sample game's stats to include power, speed, and defense instead
    of just attack and defense. Power was substituted for attack.
  * Expanded the combat in the sample game to give you a chance to dodge attacks
@@ -427,7 +427,7 @@ Version 3 (posted 05-26-2012)
  * Made the space bar close the loot window if there are no more items shown
    in the window.
  * Rearranged the code for abilities in the demo to make target checking part of
-   the ability's can_use() proc. This way the mana cost and cooldowns aren't
+   the ability's can_use() proc. This way the reiatsu cost and cooldowns aren't
    triggered if the ability doesn't have a valid target. These abilities now also
    trigger the no_target_selected() event to fire in these cases.
  * Added the atom/movable/lootable var which is used to determine if an object

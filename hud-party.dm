@@ -7,7 +7,7 @@
 //   This file creates the on-screen display of your
 //   party members. It's automatically updated as
 //   members are added or removed, and as they gain
-//   or lose health/mana.
+//   or lose health/reiatsu.
 
 PartyMemberDisplay
 	parent_type = /HudGroup
@@ -19,7 +19,7 @@ PartyMemberDisplay
 		mob/mob
 
 		HudObject/health
-		HudObject/mana
+		HudObject/reiatsu
 		HudObject/player
 		HudObject/caption
 		HudObject/shadow
@@ -31,7 +31,7 @@ PartyMemberDisplay
 		mob = m
 
 		health = add(-4, 16, "health-4")
-		mana = add(36, 16, "mana-4")
+		reiatsu = add(36, 16, "reiatsu-4")
 		player = add(16, 16, icon = m.icon, icon_state = "[m.base_state]-standing")
 		player.overlays += m.overlays
 		caption = add(0, 0, "", maptext_width = 64, maptext = "<text align=\"center\">[m.name]</text>", layer = layer + 1)
@@ -51,13 +51,13 @@ PartyMemberDisplay
 			health.icon_state = "health-[h]"
 
 			var/m = 0
-			if(mob.max_mana)
-				h = round(4 * mob.mana / mob.max_mana)
+			if(mob.max_reiatsu)
+				h = round(4 * mob.reiatsu / mob.max_reiatsu)
 
 			if(m < 0) m = 0
 			if(m > 4) m = 4
 
-			mana.icon_state = "mana-[m]"
+			reiatsu.icon_state = "reiatsu-[m]"
 
 PartyDisplay
 	parent_type = /HudGroup

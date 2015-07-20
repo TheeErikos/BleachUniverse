@@ -4,7 +4,7 @@
 // Author:  Forum_account
 //
 // Contents:
-//   This file manages the on-screen display of medals
+//   This file reiatsuges the on-screen display of medals
 //   that's used when you earn one.
 
 MedalDisplay

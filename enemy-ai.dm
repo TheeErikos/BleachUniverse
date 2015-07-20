@@ -4,7 +4,7 @@
 // Author:  Forum_account
 //
 // Contents:
-//   This file contains the code that manages which mobs
+//   This file contains the code that reiatsuges which mobs
 //   are active. If a mob isn't near a client it is
 //   deactivated to save CPU usage. This file also contains
 //   the ai() proc which can be used to create enemy AI.
@@ -82,17 +82,17 @@ mob
 			slow_down()
 			return
 
-		// if the mob is alive, check if health and mana regen
+		// if the mob is alive, check if health and reiatsu regen
 		// should be called.
 		if(health < max_health)
 			if(!on_cooldown("health_regen"))
 				cooldown("health_regen", Constants.REGEN_TICK_LENGTH)
 				health_regen()
 
-		if(mana < max_mana)
-			if(!on_cooldown("mana_regen"))
-				cooldown("mana_regen", Constants.REGEN_TICK_LENGTH)
-				mana_regen()
+		if(reiatsu < max_reiatsu)
+			if(!on_cooldown("reiatsu_regen"))
+				cooldown("reiatsu_regen", Constants.REGEN_TICK_LENGTH)
+				reiatsu_regen()
 
 
 		// only clients check for mobs to activate
@@ -129,7 +129,7 @@ mob
 		// periodically and you can implement regeneration
 		// however you'd like.
 		health_regen()
-		mana_regen()
+		reiatsu_regen()
 
 		// by default, the mob's AI makes them wander around, look
 		// for targets, and attack their targets.

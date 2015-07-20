@@ -45,6 +45,3 @@ mob
 
 		set_money(m)
 			money = m
-
-			if(info_box)
-				info_box.refresh()

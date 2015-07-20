@@ -4,7 +4,7 @@
 // Author:  Forum_account
 //
 // Contents:
-//   This file contains the procs to manage a player's
+//   This file contains the procs to reiatsuge a player's
 //   inventory (pick up items, drop them, check to see
 //   if they have an item, etc.)
 

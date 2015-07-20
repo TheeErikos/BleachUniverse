@@ -1,0 +1,85 @@
+"aa" = (/turf/townout21,/area)
+"ab" = (/obj/Bush,/turf/townout21,/area)
+"ac" = (/obj/Rock,/turf/townout21,/area)
+"ad" = (/obj/Tree4,/turf/townout21,/area)
+"ae" = (/obj/BigTree4,/turf/townout21,/area)
+"af" = (/obj/BigTree5,/turf/townout21,/area)
+"ag" = (/obj/Tree2,/turf/townout21,/area)
+"ah" = (/obj/BigTree1,/turf/townout21,/area)
+"ai" = (/obj/BigTree2,/turf/townout21,/area)
+"aj" = (/obj/FlowerBush,/turf/townout21,/area)
+"ak" = (/obj/Fence7,/turf/townout21,/area)
+"al" = (/obj/Fence8,/turf/townout21,/area)
+"am" = (/obj/Fence9,/turf/townout21,/area)
+"an" = (/obj/Fence3,/turf/lightgrass,/area)
+"ao" = (/obj/Tree4,/turf/lightgrass,/area)
+"ap" = (/obj/Bush,/turf/lightgrass,/area)
+"aq" = (/obj/Rock,/turf/lightgrass,/area)
+"ar" = (/obj/Pot,/turf/lightgrass,/area)
+"as" = (/turf/lightgrass,/area)
+"at" = (/turf/whitewall4,/area)
+"au" = (/turf/whitewall5,/area)
+"av" = (/turf/whitewall6,/area)
+"aw" = (/obj/Fence5,/turf/lightgrass,/area)
+"ax" = (/obj/BigTree1,/turf/lightgrass,/area)
+"ay" = (/obj/BigTree2,/turf/lightgrass,/area)
+"az" = (/obj/Books2,/turf/lightgrass,/area)
+"aA" = (/obj/Fence5,/turf/townout21,/area)
+"aB" = (/obj/Tree2,/turf/lightgrass,/area)
+"aC" = (/turf/buildingfloor2,/area)
+"aD" = (/obj/Bed,/turf/buildingfloor2,/area)
+"aE" = (/obj/Items2,/turf/buildingfloor2,/area)
+"aF" = (/obj/Fence5,/obj/Fence5,/turf/lightgrass,/area)
+"aG" = (/obj/Inn1,/turf/buildingfloor2,/area)
+"aH" = (/obj/InnSign,/turf/whitewall46,/area)
+"aI" = (/obj/FlowerBush,/turf/lightgrass,/area)
+"aJ" = (/obj/ItemSign,/turf/whitewall6,/area)
+"aK" = (/turf/whitewall46,/area)
+"aL" = (/obj/Fence1,/turf/lightgrass,/area)
+"aM" = (/obj/Fence8,/turf/lightgrass,/area)
+"aN" = (/obj/Fence9,/turf/lightgrass,/area)
+"aO" = (/obj/BigTree4,/turf/lightgrass,/area)
+"aP" = (/obj/BigTree5,/turf/lightgrass,/area)
+"aQ" = (/obj/Well,/turf/lightgrass,/area)
+"aR" = (/obj/Fence7,/turf/lightgrass,/area)
+"aS" = (/obj/Armors2,/turf/buildingfloor2,/area)
+"aT" = (/turf/townin21,/area)
+"aU" = (/obj/Weapons2,/turf/buildingfloor2,/area)
+"aV" = (/obj/ArmorSign,/turf/whitewall6,/area)
+"aW" = (/obj/WeaponSign,/turf/whitewall6,/area)
+"aX" = (/obj/Fence6,/turf/lightgrass,/area)
+"aY" = (/obj/Fence1,/turf/townout21,/area)
+"aZ" = (/obj/Fence3,/turf/townout21,/area)
+
+(1,1,1) = {"
+aaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacaaaaadaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaeafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaahaiaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaadaaadaaaaaa
+aaaaaaabaaaaaaaaaaaaaaaaaaaaaaacaaaaaaaaaaabajaaaaaaaaaaaaaaaaaaaaaaagadagaaaaaa
+aaaaaaaaajakalalalalalalalalalalalalalalalalalamajabaeafacaaaaaaaaaaaaagadaaaaaa
+aaaaaaaaakanaoapapaqarasasasasasaratauauauauavawararaxayazasasasasasasaaagaaaaaa
+aaaaaaaaaAapaBatauauauauavasasararataCaCaCaCavawarasasasasasasasasasasaaaaaaaaaa
+aaaaaaaaaAararataDaDaDaDavasasasarataCaCaEaCavawasasasasasasaoasasasasaaaaaaaaaa
+aaaaaaaaaAarasataCaCaCaCavasasasasataCaCaCaCavaFasasasasasasaBasasasasaaaaacaaaa
+aaaaaaaaaAasasataDaDaCaGavasaoasasataCaCaCaCavawasasasasasasasasasasasaaaaaaaaaa
+aaaaaaaaaAasasatauavaCaCaHaIaBasasatauaJaCaCaKaLaMaMaMaNasasasasasasasaaaaaaaaaa
+aaaaaaaaaAasasaOaPapasasasasasasasasasasasasasasasasasawasasasasasasasaaadaaaaaa
+aaaaaeafaAasasaxayapasasasasaQasasasasasasasasaoasasasawasasasasasasasaaagaaaaaa
+aaaaahaiaAasasasasasasasasasasasasasasaOaPasasaBasasarawasasasasasasasaaaaaaaaaa
+aaaaaaaaaAasasasasasaoasasasasasasasasaxayasasasasasarawasasaqasasasasaaaaaaaaaa
+aaaaaaaaaAaqasasasasaBaIatauauauauavasasasasasaRaMaMaManasasasasasasasaaaaaaaaaa
+aaaaaaaaaAasasasasaIararaKaCaCaCaCavapasasasasawasasasasasasasasasasasaaaaaaaaaa
+aaaaaaaaaAasasasatauauauavaCaSaCaCavasasasasasawasasasasasasasasasasasaaaaaaaaaa
+aaaaaaaaaaaTasasataCaCaCaKaCaCaCaCavasasasasasaLaMaNasasasasasasasasasaaaeafaaaa
+aaaaaaaaaAasasasataCaCaUatauaVaCaCaKasasasasasasasawasasasasasasasasasaaahaiaaaa
+aaaaaaaaaAasasaoataCaCaCavaIasasasasasasasasasasasawasasasasasasasasasaaabaaaaaa
+aaaaaaaaaAasasaBataWaCaCaKapasasasasasasasasasasasawasasasasasasasasasaaaaaaaaaa
+aaaaaaaaaAasasaOaPasasasasasasasasasaRaMaMaMaMaXasanasasasasasasasasasaaaaaaaaaa
+aaaaaaacaAasasaxayasasasasasasasasasawapaoasasasasasasasasasasasasasasaaaaaaaaaa
+aaaaaaaaaAasasasasasasasasasararapapawapaBaoasasasasasasasasasasasasaqaaaaaaaaaa
+aaaaaaaaaYalalalalalalalalalalalalalaZababagacaaaaaaaaaaaaaaaaaaaaacaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeafaaaaaaaaajaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeafaaaaaaaaaaaaaaaaahaiaaaaaaaaaaaaaaaaaaaaaa
+aaaaaeafaaaaaaaaaaacabaaaaaaaaaaaaahaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaahaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}

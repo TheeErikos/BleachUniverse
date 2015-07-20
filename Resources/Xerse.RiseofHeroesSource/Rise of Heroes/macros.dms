@@ -1,0 +1,10 @@
+
+macro
+	X return "Talk"
+	C return "Get"
+	M return "Whisper"
+	Tab return "HotKeys"
+	Space return "WSay"
+	V return "Say"
+	B return "Use"
+	center return "attack"

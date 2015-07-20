@@ -1,0 +1,23 @@
+"a" = (/turf/icewall5,/area)
+"b" = (/turf/snow5,/area)
+"c" = (/obj/Books3,/turf/snow5,/area)
+"d" = (/turf/townbookin004,/area)
+"e" = (/turf/zenbookout004,/area)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaa
+aaaaabbbbbaaaaa
+aaaaabbcbbaaaaa
+aaaaabbbbbaaaaa
+aaaaabbbbbaaaaa
+aaaaabbdbbaaaaa
+aaaaaaaeaaaaaaa
+aaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaa
+"}

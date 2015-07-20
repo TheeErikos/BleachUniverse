@@ -1,0 +1,91 @@
+"a" = (/turf/snowforest5,/area)
+"b" = (/turf/snowforest6,/area)
+"c" = (/turf/townout004,/area)
+"d" = (/turf/snowforest4,/area)
+"e" = (/turf/snowforest7,/area)
+"f" = (/turf/snowforest9,/area)
+"g" = (/turf/snow5,/area)
+"h" = (/turf/townin004,/area)
+"i" = (/obj/Fence7,/turf/snow5,/area)
+"j" = (/obj/Fence8,/turf/snow5,/area)
+"k" = (/obj/Fence9,/turf/snow5,/area)
+"l" = (/obj/Fence5,/turf/snow5,/area)
+"m" = (/obj/Fence3,/turf/snow5,/area)
+"n" = (/turf/snowforest3,/area)
+"o" = (/obj/Well,/turf/snow5,/area)
+"p" = (/turf/snowforest1,/area)
+"q" = (/obj/Fence1,/turf/snow5,/area)
+"r" = (/turf/snow53,/area)
+"s" = (/turf/snow2,/area)
+"t" = (/turf/snow51,/area)
+"u" = (/turf/snow6,/area)
+"v" = (/turf/lightgrass,/area)
+"w" = (/turf/snow1,/area)
+"x" = (/obj/Fence5,/turf/snow53,/area)
+"y" = (/turf/snow3,/area)
+"z" = (/turf/snow4,/area)
+"A" = (/turf/darkwall5,/area)
+"B" = (/obj/Fence5,/turf/snow6,/area)
+"C" = (/obj/ArmorSign,/turf/darkwall5,/area)
+"D" = (/obj/Armors4,/turf/lightgrass,/area)
+"E" = (/obj/Fence5,/turf/snow59,/area)
+"F" = (/turf/snow8,/area)
+"G" = (/turf/snow9,/area)
+"H" = (/obj/Items4{dir = 1},/turf/lightgrass,/area)
+"I" = (/turf/snow7,/area)
+"J" = (/turf/snow57,/area)
+"K" = (/obj/Fence8,/turf/snow59,/area)
+"L" = (/obj/Fence8,/obj/ItemSign,/turf/snow8,/area)
+"M" = (/obj/Fence8,/turf/snow8,/area)
+"N" = (/obj/Fence9,/turf/snow57,/area)
+"O" = (/obj/Weapons4,/turf/lightgrass,/area)
+"P" = (/obj/WeaponSign,/turf/darkwall5,/area)
+"Q" = (/turf/snowforest2,/area)
+"R" = (/obj/Bed,/turf/lightgrass,/area)
+"S" = (/obj/InnSign,/turf/darkwall5,/area)
+"T" = (/turf/snow59,/area)
+"U" = (/obj/Inn2,/turf/lightgrass,/area)
+"V" = (/turf/snowforest8,/area)
+
+(1,1,1) = {"
+aaaaabccccccccccccccccccccccccccdaaaaaaa
+aaaaabccccccccccccccccccccccccceaaaaaaaa
+aaaaabcccccccccccccccccccccccccdaaaaaaaa
+aaaaabcccccccccccccccccccccccccdaaaaaaaa
+aaaaaafccccccccccccccccccccccccdaaaaaaaa
+aaaaaabgggghgggggijjjjjjjjjkggeaaaaaaaaa
+aaaaaaafggggggggglggggggggglgeaaaaaaaaaa
+aaaaaaabggggggggggggggggggimgdaaaaaaaaaa
+aaaaaaabgggggggggggggggggglggdaaaaaaaaaa
+aaaaaaabggggggggglgggggggglggdaaaaaaaaaa
+aaaaaaanggggogggglgggggggglggpaaaaaaaaaa
+aaaaaabggggggggggqkgggggggqkggpaaaaaaaaa
+aaaaaangggggggggggqkrstggggqjkgpaaaaaaaa
+aaaaangggggggggggggluvwstgggglggpaaaaaaa
+aaaabggggggggggefggxyvvvzgggglgggdaaaaaa
+aaaabgAAAAstggeaafgBvvvvwtggglgggdaaaaaa
+aaaabgAvvCvzggdaabgBvvvvvzgggggggpaaaaaa
+aaaabgADvvvzgeaaaafEFGHvIJggggggggdaaaaa
+aaaabgAvvvvzgdaaaabqjKLMNgggglggggdaaaaa
+aaaaafAOvvvzgpaaaaafggggqjjjjmggggpaaaaa
+aaaaabAvvPIJggpQaaaafggggggggggggggdaaaa
+aaaaabAAAAJgggggpaaanggggggggggggggdaaaa
+aaaaabgggggggggggpQngggggggggggggggdaaaa
+aaaaabggggggggrsssstgggggggggggggggdaaaa
+aaaaaafggggggryvvvvwtgggggggggggggeaaaaa
+aaaaaabgggggguvvvRSvzgggggggggggggdaaaaa
+aaaaaabggggggTGvURAvzgggggggggggggdaaaaa
+aaaaaabgggggggTGAAAIJefgggggggggggdaaaaa
+aaaaaabggggggggTFFFJgdafggggggggggdaaaaa
+aaaaaaafgggggggggggggdaafggggggggeaaaaaa
+aaaaaaaaVfggggggggggeaaabggggggggdaaaaaa
+aaaaaaaaaafgggggggeVaaaaaVfggggeVaaaaaaa
+aaaaaaaaaaafggggggdaaaaaaaaVVVVaaaaaaaaa
+aaaaaaaaaaaaVVfgggdaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaVVVaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}

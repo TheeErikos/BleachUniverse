@@ -141,16 +141,16 @@ mob
 				for(var/mob/m in party.mobs)
 					m.ally_health_changed(src)
 
-		mana_changed()
+		reiatsu_changed()
 			if(party)
 				for(var/mob/m in party.mobs)
-					m.ally_mana_changed(src)
+					m.ally_reiatsu_changed(src)
 
 		ally_health_changed(mob/m)
 			if(party_display)
 				party_display.update(m)
 
-		ally_mana_changed(mob/m)
+		ally_reiatsu_changed(mob/m)
 			if(party_display)
 				party_display.update(m)
 

@@ -52,7 +52,7 @@ mob
 
 			src << s
 
-		music(file, volume = 100)
+		music(file, volume = 25)
 
 			if(!client)
 				return
@@ -73,3 +73,5 @@ mob
 				music = file
 
 			src << s
+
+

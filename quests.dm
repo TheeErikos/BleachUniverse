@@ -5,7 +5,7 @@
 //
 // Contents:
 //   This file defines the /Quest object and the mob
-//   procs that manage the acceptance, completion,
+//   procs that reiatsuge the acceptance, completion,
 //   and removal of quests. The Quest object tracks
 //   the state of the quest and is responsible for
 //   determining when the quest has been completed.

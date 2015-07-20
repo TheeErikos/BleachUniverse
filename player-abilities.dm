@@ -20,7 +20,7 @@ Ability
 
 		// this is used for display and is enforced by the
 		// default can_use proc.
-		tmp/mana_cost = 0
+		tmp/reiatsu_cost = 0
 
 		// this is the animation flicked by the player when
 		// the ability is used.
@@ -36,7 +36,7 @@ Ability
 				return "<b>[name]</b>\n[cooldown] tick cooldown"
 
 		can_use(mob/user, mob/target)
-			if(user.mana < mana_cost)
+			if(user.reiatsu < reiatsu_cost)
 				return 0
 
 			return 1
@@ -48,7 +48,7 @@ Ability
 			if(animation)
 				user.state(animation, 10)
 
-			user.lose_mana(mana_cost)
+			user.lose_reiatsu(reiatsu_cost)
 
 			effect(user, target)
 

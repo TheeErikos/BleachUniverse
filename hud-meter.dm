@@ -5,7 +5,7 @@
 //
 // Contents:
 //   This file contains the base HudMeter object which
-//   is used to create the on-screen health and mana
+//   is used to create the on-screen health and reiatsu
 //   display.
 
 HudMeter
@@ -24,8 +24,6 @@ HudMeter
 		HudObject/shadow4
 
 		list/dots = list()
-		dot_value = 4
-		dot_size = 13
 
 	New(mob/m, var_name, max_var_name)
 		..(m)
@@ -43,10 +41,6 @@ HudMeter
 			var/stat_max = owner.vars[max_var_name]
 			var/stat_value = owner.vars[var_name]
 
-			// figure out how many dots are needed
-			var/num_dots = 1
-			if(stat_max > 0)
-				num_dots = round(log(2, stat_max))
 
 			// old formula
 			// var/num_dots = round((stat_max + dot_value - 1) / dot_value)
@@ -63,7 +57,7 @@ HudMeter
 					shadow4 = add(0, 0, "", maptext_width = 128)
 
 				// position them
-				var/cx = num_dots * 13 + 40
+				var/cx = 45
 				var/cy = 5
 
 				caption.pos(cx, cy)
@@ -86,40 +80,6 @@ HudMeter
 				del shadow3
 				del shadow4
 
-			// if that doesn't match the number of dots we have
-			if(num_dots != dots.len)
-
-				// delete all existing dots
-				for(var/atom/a in dots)
-					del a
-
-				dots.Cut()
-
-				// and create new ones
-				for(var/i = 1 to num_dots)
-					dots += add(24 + i * dot_size - dot_size, -3, "")
-
-			// figure out how many bubbles should be filled
-			var/value = 0
-			if(stat_max > 0)
-				value = round((stat_value / stat_max) * (dots.len * dot_value))
-
-			// and fill them
-			for(var/i = 1 to dots.len)
-
-				// get the value for this bubble
-				var/v = value
-				if(v > dot_value)
-					v = dot_value
-				else if(v < 0)
-					v = 0
-
-				// and set its icon state
-				var/HudObject/o = dots[i]
-				o.icon_state = "[var_name]-[v]"
-
-				value -= dot_value
-
 HealthMeter
 	parent_type = /HudMeter
 
@@ -128,7 +88,7 @@ HealthMeter
 
 		// create the label
 		var/obj/o = add(0, 0, "health")
-		o.overlays += hud_label("<text align=right>health", layer = layer, pixel_y = 5)
+		o.overlays += hud_label("<text align=left>Health", layer = layer, pixel_y = 5)
 
 		pos(8, Constants.VIEW_HEIGHT * Constants.ICON_HEIGHT - 24)
 
@@ -136,18 +96,18 @@ ManaMeter
 	parent_type = /HudMeter
 
 	New(mob/m)
-		..(m, "mana", "max_mana")
+		..(m, "reiatsu", "max_reiatsu")
 
 		// create the label
-		var/obj/o = add(0, 0, "")
-		o.overlays += hud_label("<text align=right>mana", layer = layer, pixel_y = 5)
+		var/obj/o = add(0, 0, "reiatsu")
+		o.overlays += hud_label("<text align=left>Rei", layer = layer, pixel_y = 5)
 
 		pos(8, Constants.VIEW_HEIGHT * Constants.ICON_HEIGHT - 40)
 
 mob
 	var
 		tmp/HealthMeter/health_meter
-		tmp/ManaMeter/mana_meter
+		tmp/ManaMeter/reiatsu_meter
 
 	init_hud()
 		..()
@@ -156,7 +116,7 @@ mob
 			health_meter = new(src)
 
 		if(client && Constants.USE_MANA_METER)
-			mana_meter = new(src)
+			reiatsu_meter = new(src)
 
 	clear_hud()
 		..()
@@ -167,6 +127,6 @@ mob
 				del health_meter
 
 		if(Constants.USE_MANA_METER)
-			if(mana_meter)
-				mana_meter.hide()
-				del mana_meter
+			if(reiatsu_meter)
+				reiatsu_meter.hide()
+				del reiatsu_meter

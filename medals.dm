@@ -5,7 +5,7 @@
 //
 // Contents:
 //   This file defines the /Medal object and the mob
-//   procs to manage the awarding of medals. This
+//   procs to reiatsuge the awarding of medals. This
 //   proc uses the on-screen display defined in
 //   hud-medals.dm to show medals when you earn one.
 
