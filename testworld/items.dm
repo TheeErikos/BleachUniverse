@@ -95,7 +95,7 @@ item
 		slot = HEAD
 		cost = 500
 
-		// Makes your stats go skoogly woogly
+		//Makes your stats go skoogly woogly
 		equipped(mob/m)
 			m.overlay(src)
 			m.power = m.power*500
@@ -104,7 +104,7 @@ item
 		unequipped(mob/m)
 			m.remove(src)
 			m.power = m.power/500
-			m.defense = m.power/250
+			m.defense = m.defense/250
 
 	armor
 		name = "Armor"
