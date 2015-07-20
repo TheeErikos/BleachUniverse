@@ -50,6 +50,30 @@ item
 			m.remove(src)
 			m.power -= 5
 
+	zangetsu
+		name = "Zangetsu"
+		icon_state = "zangetsu"
+		description = "Ichigo Kurosaki's Shikai"
+		overlay_state = "zangetsu"
+		overlay_layer = 2
+		map_state = "zangetsu-map"
+
+		slot = MAIN_HAND
+
+		equipped(mob/m)
+			m.overlay(src)
+			m.power = m.power*1.2
+			m.speed = m.speed*1.2
+			m.attack = m.attack*1.2
+			m.defense = m.defense*1.2
+
+		unequipped(mob/m)
+			m.remove(src)
+			m.power = m.power/1.2
+			m.speed = m.speed/1.2
+			m.attack = m.attack/1.2
+			m.defense = m.defense/1.2
+
 	dagger
 		name = "Dagger"
 		icon_state = "dagger"
