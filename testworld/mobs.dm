@@ -52,6 +52,7 @@ mob
 			stat("Agility:", "[src.agility]")
 			stat("Accuracy:", "[src.accuracy]")
 			stat("Race:", "[src.class]")
+			stat("injury", "[src.injury]")
 			stat("Souls", "[src.souls]")
 
 
@@ -67,6 +68,7 @@ mob
 		attack = 5
 		agility = 5
 		accuracy = 5
+		injury = 0
 		T = 0
 
 		tmp/slowed = 0
@@ -157,6 +159,7 @@ mob
 
 		// when a player dies, make them wait two seconds and respawn.
 		if(client)
+			injury += 25
 			src << "You died! You'll respawn in two seconds."
 
 			spawn(20)
