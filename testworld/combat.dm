@@ -6,7 +6,7 @@
 // Contents:
 //   This file shows how to extend the Combat object to
 //   include stats defined by your game. It also shows how
-//   to create a graphical effect showing the money and
+//   to create a graphical effect showing the souls and
 //   experience rewarded when a mob dies.
 
 var
@@ -67,9 +67,9 @@ mob
 		..()
 		damage_number(damage)
 
-	// every time a mob gains experience and money, show the gain on the screen
-	experience_and_money_gain(experience, money, mob/enemy)
+	// every time a mob gains experience and souls, show the gain on the screen
+	experience_and_souls_gain(experience, souls, mob/enemy)
 		..()
 
 		if(client)
-			damage_number("<font color=[Constants.MONEY_COLOR]>+$[money]\n<font color=[Constants.EXPERIENCE_COLOR]>+[experience] XP", layer = 30, duration = 60)
+			damage_number("<font color=[Constants.souls_COLOR]>+$[souls]\n<font color=[Constants.EXPERIENCE_COLOR]>+[experience] XP", layer = 30, duration = 60)

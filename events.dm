@@ -25,13 +25,13 @@
 mob
 	proc
 		// this is called when a player tries to purchase an item
-		// but doesn't have enough money.
+		// but doesn't have enough souls.
 		cannot_afford_item(item/item, cost)
 			src << "You need $[cost] to buy [item]."
 
 		// This is called after a player has purchased an item.
 		// This proc doesn't give the item to the player or subtract
-		// from their money - that's handled internally - this proc
+		// from their souls - that's handled internally - this proc
 		// is just a notification you can override to create a more
 		// elaborate graphical or audio effect.
 		purchased_item(item/item, cost)
@@ -44,9 +44,9 @@ mob
 			src << "You cannot get [item], your inventory is full."
 
 		// This is called when you kill a mob and gain experience
-		// and money.
-		experience_and_money_gain(experience, money, mob/m)
-			src << "You gain [experience] XP and $[money]."
+		// and souls.
+		experience_and_souls_gain(experience, souls, mob/m)
+			src << "You gain [experience] XP and $[souls]."
 
 		// This is called when you take damage from combat.
 		took_damage(damage, mob/attacker, Combat/combat)
@@ -76,9 +76,9 @@ mob
 					q.killed(m)
 
 			if(client && m.lootable && src != m)
-				experience_and_money_gain(m.experience, m.money, m)
+				experience_and_souls_gain(m.experience, m.souls, m)
 				gain_experience(m.experience)
-				gain_money(m.money)
+				gain_souls(m.souls)
 
 		// This is called when a mob respawns.
 		respawned()

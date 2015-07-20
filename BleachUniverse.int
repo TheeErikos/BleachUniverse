@@ -1,11 +1,11 @@
 // BEGIN_INTERNALS
 /*
-LAST_COMPILE_TIME: 1437337696
-DIR: icon-generation testworld 
+LAST_COMPILE_TIME: 1437406014
+DIR: icon-generation Resources Resources\Xerse.RiseofHeroesSource Resources\Xerse.RiseofHeroesSource\Rise of Heroes testworld 
 AUTO_FILE_DIR: ON
 MAP_ICON_TYPE: 0
-LAST_COMPILE_VERSION: 507.1280
-WINDOW: icon-generation\base-armor.dmi;testworld\sword.dmi;hud-conditions.dm;testworld\interface.dmf;testworld\abilities.dm;testworld\statbox.dm;testworld\turfs.dm;BleachUniverse.dme;testworld\mobs.dm;testworld\testarea.dmm;icon-generation\overlay-generator.dm;player-abilities.dm;player-crafting.dm;testworld\enemies.dm;hud-mob-selection.dm;player-leveling.dm;player-options.dm;player-saving.dm;_notes.dm;effects-sound.dm;hud-game-menu.dm;_constants.dm;player-chat.dm;player-targeting.dm;testworld\combat.dm;testworld\medals.dm;testworld\skills.dm;player-procs.dm;hud-abilities.dm
-FILE: player-abilities.dm
+LAST_COMPILE_VERSION: 507.1286
+WINDOW: icon-generation\base-armor.dmi;testworld\sword.dmi;hud-conditions.dm;testworld\interface.dmf;testworld\abilities.dm;testworld\statbox.dm;testworld\turfs.dm;BleachUniverse.dme;testworld\mobs.dm;testworld\testarea.dmm;_constants.dm;_notes.dm;events.dm;hud-info.dm;hud-shopkeeper.dm;hud_stats.dm;player-leveling.dm;Resources\Xerse.RiseofHeroesSource\Rise of Heroes\Basics.dm;testworld\combat.dm;testworld\enemies.dm
+FILE: testworld\mobs.dm
 */
 // END_INTERNALS

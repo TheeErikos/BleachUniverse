@@ -87,7 +87,7 @@ mob
 
 			New()
 				..()
-				money = rand(1, 10)
+				souls = rand(1, 10)
 				experience = 6
 
 			// we override the died proc to give enemies a chance to drop items
@@ -121,7 +121,7 @@ mob
 
 			New()
 				..()
-				money = rand(3, 12)
+				souls = rand(3, 12)
 				experience = 10
 
 			// we override the died proc to give enemies a chance to drop items

@@ -5,14 +5,14 @@
 //
 // Contents:
 //   This file defines the mob's experience, level, and
-//   money vars and has the procs to update these vars.
+//   souls vars and has the procs to update these vars.
 
 mob
 	var
 		level = 1
 		experience = 0
 		experience_needed = 5
-		money = 0
+		souls = 0
 
 	proc
 		description(full_description = 0)
@@ -40,8 +40,8 @@ mob
 		level_up()
 			experience_needed = level * 5
 
-		gain_money(m)
-			set_money(money + m)
+		gain_souls(m)
+			set_souls(souls + m)
 
-		set_money(m)
-			money = m
+		set_souls(m)
+			souls = m

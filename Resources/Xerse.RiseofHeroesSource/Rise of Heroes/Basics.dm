@@ -335,7 +335,7 @@ mob/players
 		expneeded = 10 // yep yep
 		expgive = 0 // hrmm. never implimented pvp experience.  guess this just stuck around from before i made seperate mob classes for players and enemies
 		oldexp = 0 // i think this might be used in the exp meter for calculations, better to make it a variable here than calculate every time
-		gold = 0 // mmmmm money.  buy stuff.
+		gold = 0 // mmmmm souls.  buy stuff.
 		attackspeed // used in calculating the delay between attacks, affected by weapons
 		poisoned = 0 // are you poisoned?  this is boolean
 		poisonD // this has to do with how long you were poisoned for

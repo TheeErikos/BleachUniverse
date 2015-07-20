@@ -86,7 +86,7 @@ Constants
 			// will hear a sound played by calling atom.sound_effect()
 			SOUND_RANGE = 8
 
-			MONEY_COLOR = rgb(255, 255, 128)
+			souls_COLOR = rgb(255, 255, 128)
 			EXPERIENCE_COLOR = rgb(196, 196, 255)
 			// CHAT_COLOR = rgb(128, 144, 240)
 			// PRIVATE_CHAT_COLOR = rgb(255, 255, 144)

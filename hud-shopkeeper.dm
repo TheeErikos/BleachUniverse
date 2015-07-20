@@ -88,14 +88,14 @@ Shopkeeper
 				else
 					cost = copy.cost
 
-				if(customer.money < cost)
+				if(customer.souls < cost)
 					customer.cannot_afford_item(copy, cost)
 					return
 
 				if(customer.get_item(copy))
 
-					// subtract from their money
-					customer.set_money(customer.money - cost)
+					// subtract from their souls
+					customer.set_souls(customer.souls - cost)
 					customer.purchased_item(copy, cost)
 
 				else

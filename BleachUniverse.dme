@@ -11,6 +11,13 @@
 // BEGIN_FILE_DIR
 #define FILE_DIR .
 #define FILE_DIR "icon-generation"
+#define FILE_DIR "Resources"
+#define FILE_DIR "Resources/Eviofau.GameInaDay"
+#define FILE_DIR "Resources/Eviofau.GameInaDay/Black Sea"
+#define FILE_DIR "Resources/Xerse.RiseofHeroesSource"
+#define FILE_DIR "Resources/Xerse.RiseofHeroesSource/Rise of Heroes"
+#define FILE_DIR "Resources/Combat System"
+#define FILE_DIR "Resources/Combat System/Combat System"
 #define FILE_DIR "testworld"
 #define FILE_DIR "testworld/sound"
 #define FILE_DIR "wip"
@@ -82,7 +89,6 @@
 #include "testworld\medals.dm"
 #include "testworld\mobs.dm"
 #include "testworld\npcs.dm"
-#include "testworld\skills.dm"
 #include "testworld\turfs.dm"
 #include "testworld\interface.dmf"
 #include "testworld\testarea.dmm"

@@ -399,8 +399,8 @@ Version 4 (posted 06-04-2012)
    of just attack and defense. Power was substituted for attack.
  * Expanded the combat in the sample game to give you a chance to dodge attacks
    and get critical hits (both are based on your speed var).
- * Made mobs only yield experience and money if they were killed by another mob,
-   so that you can't get experience and money for killing yourself.
+ * Made mobs only yield experience and souls if they were killed by another mob,
+   so that you can't get experience and souls for killing yourself.
  * Added hud-conditions.dm which contains the on-screen interface for showing a
    list of conditions that are currently applied to the player.
 

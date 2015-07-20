@@ -52,6 +52,7 @@ mob
 			stat("Agility:", "[src.agility]")
 			stat("Accuracy:", "[src.accuracy]")
 			stat("Race:", "[src.class]")
+			stat("Souls", "[src.souls]")
 
 
 	var
@@ -102,8 +103,8 @@ mob
 		loc = locate(25, 25, 1)
 		camera.pixel_x = 24
 
-		// give the player some money
-		set_money(20)
+		// give the player some souls
+		set_souls(20)
 
 		// give the player a sword and equip it
 		equip(get_item(new /item/sword()))
