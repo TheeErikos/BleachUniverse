@@ -88,14 +88,14 @@ item
 	hollowmask1
 		name = "Vaizard Mask"
 		icon_state = "mask1"
-		description = "+100 Power Put this on and go crazy!"
+		description = "+lots Power Put this on and go crazy!"
 		overlay_state = "mask1"
 		map_state = "mask1-map"
 
 		slot = HEAD
 		cost = 500
 
-		// make the helmet actually give you +2 defense
+		// Makes your stats go skoogly woogly
 		equipped(mob/m)
 			m.overlay(src)
 			m.power = m.power*500
@@ -103,8 +103,8 @@ item
 
 		unequipped(mob/m)
 			m.remove(src)
-			m.power = mpower/500
-			m.defense = mpower/250
+			m.power = m.power/500
+			m.defense = m.power/250
 
 	armor
 		name = "Armor"
