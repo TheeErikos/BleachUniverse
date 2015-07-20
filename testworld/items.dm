@@ -86,7 +86,7 @@ item
 			m.defense -= 2
 
 	hollowmask1
-		name = "Vaizord Mask"
+		name = "Vaizard Mask"
 		icon_state = "mask1"
 		description = "+100 Power Put this on and go crazy!"
 		overlay_state = "mask1"
@@ -98,13 +98,13 @@ item
 		// make the helmet actually give you +2 defense
 		equipped(mob/m)
 			m.overlay(src)
-			m.power += 500
-			m.defense += 250
+			m.power = m.power*500
+			m.defense = m.defense*250
 
 		unequipped(mob/m)
 			m.remove(src)
-			m.power -= 500
-			m.defense -= 250
+			m.power = mpower/500
+			m.defense = mpower/250
 
 	armor
 		name = "Armor"

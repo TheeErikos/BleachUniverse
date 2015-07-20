@@ -1,11 +1,11 @@
 // BEGIN_INTERNALS
 /*
-LAST_COMPILE_TIME: 1437420482
+LAST_COMPILE_TIME: 1437421158
 DIR: icon-generation Icons Icons\InvertHuman testworld 
 AUTO_FILE_DIR: ON
 MAP_ICON_TYPE: 0
-LAST_COMPILE_VERSION: 507.1280
-WINDOW: Icons\InvertHuman\inverthuman.dmi
-FILE: Icons\InvertHuman\inverthuman.dmi
+LAST_COMPILE_VERSION: 507.1286
+WINDOW: Icons\InvertHuman\inverthuman.dmi;testworld\mobs.dm;testworld\items.dm
+FILE: testworld\items.dm
 */
 // END_INTERNALS
