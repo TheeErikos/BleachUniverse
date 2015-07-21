@@ -1,5 +1,6 @@
 // BEGIN_INTERNALS
 /*
+<<<<<<< HEAD
 LAST_COMPILE_TIME: 1437507107
 DIR: icon-generation Icons Icons\InvertHuman Icons\Zanpakutou\Zangetsu testworld 
 AUTO_FILE_DIR: ON
@@ -7,5 +8,14 @@ MAP_ICON_TYPE: 0
 LAST_COMPILE_VERSION: 507.1280
 WINDOW: Icons\InvertHuman\inverthuman.dmi;testworld\shadow-47.dmi;Icons\Zanpakutou\Zangetsu\Zangetsu.dmi;testworld\items.dmi;testworld\items.dm;_notes.dm;hud-mob-selection.dm;_constants.dm;BleachUniverse.dme;_world.dm
 FILE: _world.dm
+=======
+LAST_COMPILE_TIME: 1437478388
+DIR: icon-generation Icons Icons\Human Icons\InvertHuman Icons\Sources Resources testworld 
+AUTO_FILE_DIR: ON
+MAP_ICON_TYPE: 0
+LAST_COMPILE_VERSION: 507.1286
+WINDOW: Icons\InvertHuman\inverthuman.dmi;testworld\enemies.dm;Icons\player-human.dmi
+FILE: testworld\enemies.dm
+>>>>>>> origin/master
 */
 // END_INTERNALS

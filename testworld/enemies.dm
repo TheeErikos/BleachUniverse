@@ -135,3 +135,28 @@ mob
 					new /item/sword(src)
 
 				..()
+
+		invertedHuman
+			base_state = "inverthuman"
+			icon_state = "inverthuman-standing"
+
+			power = 4
+			speed = 5
+			defense = 5
+
+			health = 40
+			max_health = 40
+
+			base_speed = 1
+
+			abilities = list(new /Ability/EnemyAttack())
+
+			New()
+				..()
+				souls = rand(3, 12)
+				experience = 10
+
+			// we override the died proc to give enemies a chance to drop items
+			died()
+				noise('splat.wav', frequency = 0.6)
+				..()

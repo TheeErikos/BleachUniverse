@@ -14,9 +14,17 @@
 #define FILE_DIR "Icons"
 #define FILE_DIR "Icons/Human"
 #define FILE_DIR "Icons/InvertHuman"
+<<<<<<< HEAD
 #define FILE_DIR "Icons/Templates"
 #define FILE_DIR "Icons/Zanpakutou"
 #define FILE_DIR "Icons/Zanpakutou/Zangetsu"
+=======
+#define FILE_DIR "Icons/Sources"
+#define FILE_DIR "Icons/Wearables"
+#define FILE_DIR "Icons/Zanpakutou"
+#define FILE_DIR "Resources"
+#define FILE_DIR "Resources/tweakpng-1.4.6"
+>>>>>>> origin/master
 #define FILE_DIR "testworld"
 #define FILE_DIR "testworld/sound"
 // END_FILE_DIR
