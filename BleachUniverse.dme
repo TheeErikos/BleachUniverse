@@ -16,6 +16,7 @@
 #define FILE_DIR "Icons/InvertHuman"
 #define FILE_DIR "Icons/Sources"
 #define FILE_DIR "Icons/Wearables"
+#define FILE_DIR "Icons/Zanpakutou"
 #define FILE_DIR "Resources"
 #define FILE_DIR "Resources/tweakpng-1.4.6"
 #define FILE_DIR "testworld"
