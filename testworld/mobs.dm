@@ -26,8 +26,8 @@ AbilityMenu
 
 
 mob
-	icon = 'player-human.dmi'
-	base_state = "human2"
+	icon = 'player-soul.dmi'
+	base_state = "playersoul"
 
 	pwidth = 16
 	pheight = 16
