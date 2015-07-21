@@ -28,7 +28,7 @@ Constants
 			// used to open/close the loot and inventory panels
 			KEY_LOOT = "l"
 			KEY_INVENTORY = "i"
-			KEY_ABILITIES = "n"
+			KEY_ABILITIES = "f"
 			KEY_QUESTS = "q"
 			KEY_PARTY = "p"
 			KEY_INFO_BAR = "h"
@@ -42,7 +42,7 @@ Constants
 			KEY_DROP = "x"
 
 			// these enable or disable HUD elements
-			USE_ABILITY_BAR = 1
+			USE_ABILITY_BAR = 0
 			USE_INFO_BOX = 0
 			USE_INVENTORY = 1
 			USE_LOOT_WINDOW = 1
@@ -50,9 +50,9 @@ Constants
 			USE_MANA_METER = 1
 			USE_SHOPKEEPER = 1
 			USE_CONDITIONS_BAR = 1
-			USE_GAME_MENU = 1
-			USE_QUEST_TRACKER = 1
-			USE_MEDAL_DISPLAY = 1
+			USE_GAME_MENU = 0
+			USE_QUEST_TRACKER = 0
+			USE_MEDAL_DISPLAY = 0
 			USE_PARTY_DISPLAY = 1
 			USE_BANK = 1
 			USE_INFO_BAR = 0
@@ -73,8 +73,8 @@ Constants
 			ICON_HEIGHT = 32
 
 			// the size of the map's display area in tiles
-			VIEW_WIDTH = 16
-			VIEW_HEIGHT = 12
+			VIEW_WIDTH = 20
+			VIEW_HEIGHT = 16
 
 			// Bit flags that correspond to the different teams a mob
 			// can belong to. The library only defines two teams, players

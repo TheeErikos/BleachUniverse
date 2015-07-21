@@ -19,7 +19,7 @@ var
 
 item
 	icon = 'items.dmi'
-	overlay_icon = 'overlays.dmi'
+	overlay_icon = 'moboverlay.dmi'
 	map_icon = 'items.dmi'
 
 	iron_bar
