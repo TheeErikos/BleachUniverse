@@ -8,7 +8,7 @@
 "h" = (/mob/npc/banker,/turf/floor_01,/area/help/banker)
 "i" = (/turf/floor_01,/area)
 "j" = (/mob/npc/npc2,/turf/floor_01,/area)
-"k" = (/item/vaizordmask,/turf,/area)
+"k" = (/item/hollowmask1,/turf,/area)
 "l" = (/turf/floor_01,/area/help/shopkeeper)
 "m" = (/mob/npc/shopkeeper,/turf/floor_01,/area/help/shopkeeper)
 "n" = (/mob/npc/guard,/turf,/area)

@@ -84,6 +84,7 @@
 #include "testworld\mobs.dm"
 #include "testworld\npcs.dm"
 #include "testworld\skills.dm"
+#include "testworld\statcheck.dm"
 #include "testworld\turfs.dm"
 #include "testworld\interface.dmf"
 #include "testworld\testarea.dmm"

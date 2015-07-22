@@ -24,13 +24,13 @@ MagicCombat
 			return 0
 
 		// magic attacks use the "mind" stat to determine critical hits
-		if(attacker && prob(attacker.power * 2))
+		if(attacker && prob(attacker.basepower * 2))
 			target.effect("critical-hit")
 			damage *= 2
 			target.noise('critical-hit.wav')
 
 		// we use the target's resistance var to modify the
-		// damage instead of defense
+		// damage instead of basedefense
 		damage -= rand(0, target.resistance)
 
 		..()
@@ -45,18 +45,18 @@ PhysicalCombat
 	attack(mob/attacker, mob/target, damage)
 
 		// the target has a chance to dodge the attack
-		if(prob(target.speed * 2))
+		if(prob(target.basespeed * 2))
 			target.damage_number("dodge")
 			return 0
 
 		// the attack has a chance to be a critical hit
-		if(attacker && prob(attacker.speed * 2))
+		if(attacker && prob(attacker.basespeed * 2))
 			target.effect("critical-hit")
 			damage *= 2
 			target.noise('critical-hit.wav')
 
-		// use the target's defense var to modify the damage value
-		damage -= rand(0, target.defense)
+		// use the target's basedefense var to modify the damage value
+		damage -= rand(0, target.basedefense)
 
 		// run the default behavior, which actually inflicts the damage.
 		..()

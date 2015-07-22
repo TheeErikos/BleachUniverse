@@ -29,7 +29,7 @@ Ability
 			var/mob/target = user.melee_target()
 
 			if(target)
-				PhysicalCombat.attack(user, target, user.power)
+				PhysicalCombat.attack(user, target, user.basepower)
 				new /Condition/Slowed(target, user)
 
 				target.effect("punch")
@@ -74,14 +74,14 @@ mob
 			icon_state = "blue-ooze-standing"
 			shadow_state = "ooze-shadow"
 
-			power = 4
-			speed = 5
-			defense = 5
+			basepower = 4
+			basespeed = 5
+			basedefense = 5
 
 			health = 40
 			max_health = 40
 
-			base_speed = 1
+			base_basespeed = 1
 
 			abilities = list(new /Ability/EnemyAttack())
 
@@ -108,14 +108,14 @@ mob
 			icon_state = "green-ooze-standing"
 			shadow_state = "ooze-shadow"
 
-			power = 4
-			speed = 5
-			defense = 5
+			basepower = 4
+			basespeed = 5
+			basedefense = 5
 
 			health = 40
 			max_health = 40
 
-			base_speed = 1
+			base_basespeed = 1
 
 			abilities = list(new /Ability/EnemyAttack(), new /Ability/EnemyPoisonAttack())
 
@@ -140,14 +140,14 @@ mob
 			base_state = "inverthuman"
 			icon_state = "inverthuman-standing"
 
-			power = 4
-			speed = 5
-			defense = 5
+			basepower = 4
+			basespeed = 5
+			basedefense = 5
 
 			health = 40
 			max_health = 40
 
-			base_speed = 1
+			base_basespeed = 1
 
 			abilities = list(new /Ability/EnemyAttack())
 

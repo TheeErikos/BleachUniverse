@@ -26,8 +26,8 @@ AbilityMenu
 
 
 mob
-	icon = 'player-soul.dmi'
-	base_state = "playersoul"
+	icon = 'mobs.dmi'
+	base_state = "human2"
 
 	pwidth = 16
 	pheight = 16
@@ -45,31 +45,44 @@ mob
 			stat("Level:", "[src.level]")
 			stat("Health:","[src.health]/[src.max_health]")
 			stat("Reiatsu:","[src.reiatsu]/[src.max_reiatsu]")
-			stat("Power:", "[src.power]")
-			stat("Speed:", "[src.speed]")
-			stat("Defense:", "[src.defense]")
+			stat("Power:", "[src.basepower]")
+			stat("Speed:", "[src.basespeed]")
+			stat("Defense:", "[src.basedefense]")
 			stat("Attack:", "[src.attack]")
 			stat("Agility:", "[src.agility]")
 			stat("Accuracy:", "[src.accuracy]")
 			stat("Race:", "[src.class]")
-			stat("injury", "[src.injury]")
+			stat("injury", "[src.injury]/100")
 			stat("Souls", "[src.souls]")
+			stat("Alive Status: [src.deadstatus]")
 
 
 	var
 		class = ""
-		base_speed = 4
+		spritegender = ""
+		base_basespeed = 4
 
-		power = 5
-		speed = 5
-		mind = 5
-		defense = 5
-		resistance = 5
-		attack = 5
-		agility = 5
-		accuracy = 5
+		basepower = 5
+		basespeed = 5
+		mind = 1
+		basedefense = 1
+		resistance = 1
+		attack = 1
+		agility = 1
+		accuracy = 1
 		injury = 0
-		T = 0
+		isdead = 0
+		deadstatus = "Alive"
+
+		boostedpower = 0
+		boostedspeed = 0
+		boostedmind = 0
+		boosteddefense = 0
+		boostedresistance = 0
+		boostedattack = 0
+
+		effectivepower = 0
+
 
 		tmp/slowed = 0
 
@@ -87,21 +100,9 @@ mob
 
 	new_character()
 		loc = null
-
-		src << "Welcome to bleach universe!"
-		src << ""
-		src << "Press \[I] to open your inventory."
-		src << "Press \[F] to customize your abilities."
-		src << "Press \[Space Bar] to interact with NPCs."
-		src << "Press \[Esc] to exit menus, close windows, or bring up the game menu."
-		src << "Press \[L] or \[Space Bar] to loot corpses."
-		src << "Press \[1] and \[2] to attack."
-		src << "Press \[Tab] to select a hostile target."
-		src << "Press \[Shift] + \[Tab] to select a friendly target."
-		src << "Press \[Q] to switch input focus to the quest tracker."
-
 		name = text_prompt("What do you want your name to be?")
 		class = "Human"//prompt("What character class would you like to be?", "Human")
+		spritegender = "Male"
 
 		loc = locate(25, 25, 1)
 		camera.pixel_x = 24
@@ -113,9 +114,6 @@ mob
 		equip(get_item(new /item/sword()))
 
 		// give them armor, a helmet, and a dagger but don't equip them
-		get_item(new /item/armor())
-		get_item(new /item/helmet())
-		get_item(new /item/dagger())
 		get_item(new /item/hollowmask1())
 
 		// give them two health potions, these will appear
@@ -123,34 +121,18 @@ mob
 		get_item(new /item/health_potion())
 		get_item(new /item/health_potion())
 
-		// give the player 15 iron bars
-		get_item(new /item/iron_bar(15))
-
 		// give the player some attacks
 		abilities += new /Ability/Cleave()
-		abilities += new /Ability/Poison()
-		abilities += new /Ability/Fireball()
-		abilities += new /Ability/ShootArrow()
-
-		// and a crafting ability
-		abilities += new /CraftingAbility/MakeSword()
-
 
 	Login()
-		if(T==0)
-			..()
-			music('mainmenu.wav')
-			T=1
-		else
-			..()
-			music('mainmenu.wav', 0)
-
+		..()
+		music('mainmenu.wav')
 
 	action()
 		if(slowed)
-			move_speed = base_speed * 0.5
+			move_speed = base_basespeed * 0.5
 		else
-			move_speed = base_speed
+			move_speed = base_basespeed
 
 		..()
 
@@ -160,6 +142,7 @@ mob
 		// when a player dies, make them wait two seconds and respawn.
 		if(client)
 			injury += 25
+			InjuryCalc()
 			src << "You died! You'll respawn in two seconds."
 
 			spawn(20)
@@ -168,6 +151,10 @@ mob
 	// after the player respawns, move them back to the starting location
 	respawned()
 		..()
+		if (isdead == 1)
+			deadstatus = "Dead"
+		else
+			deadstatus = "Alive"
 		//loc = locate()//locate(17, 35, 1)
 
 mob

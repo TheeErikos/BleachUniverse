@@ -16,6 +16,7 @@ var
 		MAIN_HAND = "main-hand"
 		BODY = "body"
 		HEAD = "head"
+		RELEASE = "body"
 
 item
 	icon = 'items.dmi'
@@ -41,14 +42,14 @@ item
 
 		slot = MAIN_HAND
 
-		// make the sword actually give you +5 power
+		// make the sword actually give you +5 basepower
 		equipped(mob/m)
 			m.overlay(src)
-			m.power += 5
+			m.basepower += 5
 
 		unequipped(mob/m)
 			m.remove(src)
-			m.power -= 5
+			m.basepower -= 5
 
 	zangetsu
 		name = "Zangetsu"
@@ -58,37 +59,31 @@ item
 		overlay_layer = 2
 		map_state = "zangetsu-map"
 
-		slot = MAIN_HAND
+		slot = RELEASE
 
 		equipped(mob/m)
 			m.overlay(src)
-			m.power = m.power*1.2
-			m.speed = m.speed*1.2
-			m.attack = m.attack*1.2
-			m.defense = m.defense*1.2
+			m.boostedpower = m.basepower*5
 
 		unequipped(mob/m)
 			m.remove(src)
-			m.power = m.power/1.2
-			m.speed = m.speed/1.2
-			m.attack = m.attack/1.2
-			m.defense = m.defense/1.2
+			m.boostedpower = 0
 
 	dagger
 		name = "Dagger"
 		icon_state = "dagger"
-		description = "+3 Power, +5 speed"
+		description = "+3 Power, +5 basespeed"
 		map_state = "dagger-map"
 
 		slot = MAIN_HAND
 
 		equipped(mob/m)
-			m.power += 3
-			m.speed += 5
+			m.basepower += 3
+			m.basespeed += 5
 
 		unequipped(mob/m)
-			m.power -= 3
-			m.speed -= 5
+			m.basepower -= 3
+			m.basespeed -= 5
 
 	helmet
 		name = "Helmet"
@@ -100,14 +95,14 @@ item
 		slot = HEAD
 		cost = 5
 
-		// make the helmet actually give you +2 defense
+		// make the helmet actually give you +2 basedefense
 		equipped(mob/m)
 			m.overlay(src)
-			m.defense += 2
+			m.basedefense += 2
 
 		unequipped(mob/m)
 			m.remove(src)
-			m.defense -= 2
+			m.basedefense -= 2
 
 	hollowmask1
 		name = "Vaizard Mask"
@@ -122,13 +117,9 @@ item
 		//Makes your stats go skoogly woogly
 		equipped(mob/m)
 			m.overlay(src)
-			m.power = m.power*500
-			m.defense = m.defense*250
 
 		unequipped(mob/m)
 			m.remove(src)
-			m.power = m.power/500
-			m.defense = m.defense/250
 
 	armor
 		name = "Armor"
@@ -140,14 +131,14 @@ item
 		slot = BODY
 		cost = 8
 
-		// make the armor actually give you +4 defense
+		// make the armor actually give you +4 basedefense
 		equipped(mob/m)
 			m.overlay(src)
-			m.defense += 4
+			m.basedefense += 4
 
 		unequipped(mob/m)
 			m.remove(src)
-			m.defense -= 4
+			m.basedefense -= 4
 
 	health_potion
 		name = "Health Potion"

@@ -10,9 +10,9 @@
 
 mob
 	npc
-		icon_state = "human-standing"
+		icon_state = "human2-standing"
 		invulnerable = 1
-		base_speed = 1
+		base_basespeed = 1
 
 		npc1
 			interact(mob/m)
@@ -61,14 +61,14 @@ mob
 
 		guard
 			wander_distance = 0
-			base_speed = 3
+			base_basespeed = 3
 
 			health = 60
 			max_health = 60
 
-			power = 8
-			speed = 10
-			defense = 5
+			basepower = 8
+			basespeed = 10
+			basedefense = 5
 
 			abilities = list(new /Ability/EnemyAttack())
 
