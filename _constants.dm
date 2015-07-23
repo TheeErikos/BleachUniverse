@@ -74,7 +74,7 @@ Constants
 
 			// the size of the map's display area in tiles
 			VIEW_WIDTH = 20
-			VIEW_HEIGHT = 16
+			VIEW_HEIGHT = 15
 
 			// Bit flags that correspond to the different teams a mob
 			// can belong to. The library only defines two teams, players

@@ -1,11 +1,11 @@
 // BEGIN_INTERNALS
 /*
-LAST_COMPILE_TIME: 1437529890
-DIR: Icons Icons\Human Icons\InvertHuman testworld Lib 
+LAST_COMPILE_TIME: 1437617529
+DIR: Icons Icons\Human Icons\InvertHuman Icons\Shinigami testworld Lib 
 AUTO_FILE_DIR: ON
 MAP_ICON_TYPE: 0
 LAST_COMPILE_VERSION: 507.1280
-WINDOW: Icons\Human\player-human.dmi;Icons\Human\player-soul.dmi;testworld\mobs.dm;testworld\statcheck.dm;testworld\abilities.dm;combat.dm;player-saving.dm;testworld\testarea.dmm;testworld\mobs.dmi;testworld\npcs.dm;_notes.dm;hud-mob-selection.dm;testworld\interface.dmf;effects-visual.dm;player-procs.dm;testworld\custom-hud.dm;testworld\help.dm;testworld\shadow-47.dmi;icon-generation\overlay-generator.dm;icon-generation\base-armor.dmi;icon-generation\base-helmet.dmi;icon-generation\base-sword.dmi;testworld\items.dm;items.dm;testworld\combat.dm;testworld\conditions.dm;hud-info.dm;hud_stats.dm;projectiles.dm;Icons\InvertHuman\inverthuman.dmi
-FILE: testworld\mobs.dmi
+WINDOW: Icons\Human\player-human.dmi;Icons\Human\player-soul.dmi;testworld\mobs.dm;testworld\statcheck.dm;testworld\abilities.dm;combat.dm;player-saving.dm;testworld\testarea.dmm;Icons\Shinigami\ShinigamiGarb.dmi;testworld\moboverlay.dmi;testworld\items.dm;testworld\items.dmi;testworld\npcs.dm
+FILE: testworld\npcs.dm
 */
 // END_INTERNALS

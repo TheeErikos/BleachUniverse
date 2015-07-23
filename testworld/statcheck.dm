@@ -2,9 +2,10 @@ mob
 	proc
 		InjuryCalc()
 			if (src.injury >= 100)
-				world << "[src] has just died!"
+				world << "[src.name] has just died!"
 				src.injury = 0
 				src.base_state = "playersoul"
+				src.class = "Soul"
 				src.isdead = 1
 
 		PowerState()
@@ -12,4 +13,4 @@ mob
 	verb
 
 		SayWorld(msg as text)
-			world << "{[src.class]}[usr] says, [msg]"
+			src << "{[src.class]}[usr] says, [msg]"

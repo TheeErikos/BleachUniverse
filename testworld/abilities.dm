@@ -42,7 +42,7 @@ Ability
 			user.cooldown("attack", 10)
 
 			// inflict damage and show a graphical effect on the target
-			PhysicalCombat.attack(user, target, 5 + user.basepower)
+			PhysicalCombat.attack(user, target, 5 + user.effectivepower)
 			target.effect("dagger-slash")
 			target.noise('hit-1.wav', frequency = rand(0.7, 1.3))
 
@@ -109,7 +109,7 @@ Ability
 
 			// damage all targets in melee range
 			for(var/mob/target in user.all_melee_targets())
-				PhysicalCombat.attack(user, target, 3 + user.basepower / 2)
+				PhysicalCombat.attack(user, target, 3 + user.effectivepower / 2)
 				target.effect("sword-slash")
 				target.noise('hit-2.wav', frequency = rand(0.7, 1.3))
 
@@ -190,7 +190,7 @@ missile
 		icon_state = "arrow"
 
 		hit(mob/m)
-			PhysicalCombat.attack(owner, m, 10 + owner.basespeed)
+			PhysicalCombat.attack(owner, m, 10 + owner.effectivespeed)
 			m.effect("arrow-hit")
 			m.noise('hit-1.wav', frequency = rand(0.7, 1.3))
 

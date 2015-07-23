@@ -13,7 +13,7 @@ world
 	map_format = SIDE_MAP
 
 // Uncomment this line to change the title screen image.
-Options/title_screen = 'title-screen.png'
+Options/title_screen = 'title-screen.jpg'
 
 HealthMeter
 	show_caption = 1
@@ -45,9 +45,9 @@ mob
 			stat("Level:", "[src.level]")
 			stat("Health:","[src.health]/[src.max_health]")
 			stat("Reiatsu:","[src.reiatsu]/[src.max_reiatsu]")
-			stat("Power:", "[src.basepower]")
-			stat("Speed:", "[src.basespeed]")
-			stat("Defense:", "[src.basedefense]")
+			stat("Power:", "[src.effectivepower]")
+			stat("Speed:", "[src.effectivespeed]")
+			stat("Defense:", "[src.effectivedefense]")
 			stat("Attack:", "[src.attack]")
 			stat("Agility:", "[src.agility]")
 			stat("Accuracy:", "[src.accuracy]")
@@ -60,12 +60,12 @@ mob
 	var
 		class = ""
 		spritegender = ""
-		base_basespeed = 4
+		base_effectivespeed = 4
 
-		basepower = 5
-		basespeed = 5
+		effectivepower = 5
+		effectivespeed = 5
 		mind = 1
-		basedefense = 1
+		effectivedefense = 1
 		resistance = 1
 		attack = 1
 		agility = 1
@@ -80,8 +80,6 @@ mob
 		boosteddefense = 0
 		boostedresistance = 0
 		boostedattack = 0
-
-		effectivepower = 0
 
 
 		tmp/slowed = 0
@@ -111,7 +109,7 @@ mob
 		set_souls(20)
 
 		// give the player a sword and equip it
-		equip(get_item(new /item/sword()))
+		equip(new /item/sword())
 
 		// give them armor, a helmet, and a dagger but don't equip them
 		get_item(new /item/hollowmask1())
@@ -126,13 +124,13 @@ mob
 
 	Login()
 		..()
-		music('mainmenu.wav')
+		music('music.xm')
 
 	action()
 		if(slowed)
-			move_speed = base_basespeed * 0.5
+			move_speed = base_effectivespeed * 0.5
 		else
-			move_speed = base_basespeed
+			move_speed = base_effectivespeed
 
 		..()
 

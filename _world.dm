@@ -11,7 +11,7 @@ var
 	Options/Options = new()
 
 world
-	view = "20x16"
+	view = "15x15"
 	mob = /mob/temporary
 
 client

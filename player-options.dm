@@ -32,7 +32,7 @@ client
 
 			screen_size = s
 
-			var/width = 400 * screen_size + 480
-			var/height = 380 * screen_size
+			var/width = 1000 * screen_size + 480
+			var/height = 700 * screen_size
 
 			winset(src, "default", "size=[width]x[height]")

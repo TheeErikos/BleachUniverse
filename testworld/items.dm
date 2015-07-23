@@ -42,14 +42,14 @@ item
 
 		slot = MAIN_HAND
 
-		// make the sword actually give you +5 basepower
+		// make the sword actually give you +5 effectivepower
 		equipped(mob/m)
 			m.overlay(src)
-			m.basepower += 5
+			m.effectivepower += 5
 
 		unequipped(mob/m)
 			m.remove(src)
-			m.basepower -= 5
+			m.effectivepower -= 5
 
 	zangetsu
 		name = "Zangetsu"
@@ -63,7 +63,7 @@ item
 
 		equipped(mob/m)
 			m.overlay(src)
-			m.boostedpower = m.basepower*5
+			m.boostedpower = m.effectivepower*5
 
 		unequipped(mob/m)
 			m.remove(src)
@@ -72,18 +72,18 @@ item
 	dagger
 		name = "Dagger"
 		icon_state = "dagger"
-		description = "+3 Power, +5 basespeed"
+		description = "+3 Power, +5 effectivespeed"
 		map_state = "dagger-map"
 
 		slot = MAIN_HAND
 
 		equipped(mob/m)
-			m.basepower += 3
-			m.basespeed += 5
+			m.effectivepower += 3
+			m.effectivespeed += 5
 
 		unequipped(mob/m)
-			m.basepower -= 3
-			m.basespeed -= 5
+			m.effectivepower -= 3
+			m.effectivespeed -= 5
 
 	helmet
 		name = "Helmet"
@@ -95,14 +95,14 @@ item
 		slot = HEAD
 		cost = 5
 
-		// make the helmet actually give you +2 basedefense
+		// make the helmet actually give you +2 effectivedefense
 		equipped(mob/m)
 			m.overlay(src)
-			m.basedefense += 2
+			m.effectivedefense += 2
 
 		unequipped(mob/m)
 			m.remove(src)
-			m.basedefense -= 2
+			m.effectivedefense -= 2
 
 	hollowmask1
 		name = "Vaizard Mask"
@@ -131,14 +131,30 @@ item
 		slot = BODY
 		cost = 8
 
-		// make the armor actually give you +4 basedefense
+		// make the armor actually give you +4 effectivedefense
 		equipped(mob/m)
 			m.overlay(src)
-			m.basedefense += 4
+			m.effectivedefense += 4
 
 		unequipped(mob/m)
 			m.remove(src)
-			m.basedefense -= 4
+			m.effectivedefense -= 4
+
+	shinigarb
+		name = "Shinigami Robe"
+		icon_state = "shinirobe"
+		description = "Worn by shinigami"
+		overlay_state = "shinirobe"
+		map_state = "shinirobe-map"
+
+		slot = BODY
+		cost = 8
+
+		equipped(mob/m)
+			m.overlay(src)
+
+		unequipped(mob/m)
+			m.remove(src)
 
 	health_potion
 		name = "Health Potion"

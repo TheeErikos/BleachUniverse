@@ -32,7 +32,7 @@ Condition
 
 		// this condition just modifies the player's "slowed" var, which
 		// keeps count of how many slowing effects they have. in mobs.dm
-		// we check this var and set their movement basespeed accordingly.
+		// we check this var and set their movement effectivespeed accordingly.
 		apply()
 			target.slowed += 1
 

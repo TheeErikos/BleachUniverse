@@ -211,10 +211,10 @@ Version 7 (posted 06-15-2012)
    songs are automatically updated when the client's volume setting is changed.
  * Added music to the sample game.
  * Added the "slowed" condition to the sample game. The blue oozes attacks slow
-   your movement basespeed by 50% for one second.
- * Added the base_basespeed var to the sample game. This is a value that doesn't
-   change so even if you modify the player's move_basespeed var, you always know
-   what their base movement basespeed was.
+   your movement effectivespeed by 50% for one second.
+ * Added the base_effectivespeed var to the sample game. This is a value that doesn't
+   change so even if you modify the player's move_effectivespeed var, you always know
+   what their base movement effectivespeed was.
  * Shifted the condition icons up and over 8 pixels so they're in the center of
    their icon states now. The ConditionsBar HUD element was shifted down and
    left 8 pixels so the icons still appear in the same position on the screen.
@@ -395,10 +395,10 @@ Version 4 (posted 06-04-2012)
    can be used to modify a mob's max_health value.
  * Added the gain_reiatsu, lose_reiatsu, gain_max_reiatsu, lose_max_reiatsu, and set_max_reiatsu
    proc which are used for modifying a mob's reiatsu and max_reiatsu values.
- * Expanded the sample game's stats to include basepower, basespeed, and basedefense instead
-   of just attack and basedefense. Power was substituted for attack.
+ * Expanded the sample game's stats to include effectivepower, effectivespeed, and effectivedefense instead
+   of just attack and effectivedefense. Power was substituted for attack.
  * Expanded the combat in the sample game to give you a chance to dodge attacks
-   and get critical hits (both are based on your basespeed var).
+   and get critical hits (both are based on your effectivespeed var).
  * Made mobs only yield experience and souls if they were killed by another mob,
    so that you can't get experience and souls for killing yourself.
  * Added hud-conditions.dm which contains the on-screen interface for showing a

@@ -10,10 +10,10 @@
 
 // BEGIN_FILE_DIR
 #define FILE_DIR .
-#define FILE_DIR "icon-generation"
 #define FILE_DIR "Icons"
 #define FILE_DIR "Icons/Human"
 #define FILE_DIR "Icons/InvertHuman"
+#define FILE_DIR "Icons/Shinigami"
 #define FILE_DIR "Icons/Zanpakutou"
 #define FILE_DIR "Icons/Zanpakutou/Zangetsu"
 #define FILE_DIR "testworld"

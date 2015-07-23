@@ -12,7 +12,7 @@ mob
 	npc
 		icon_state = "human2-standing"
 		invulnerable = 1
-		base_basespeed = 1
+		base_effectivespeed = 1
 
 		npc1
 			interact(mob/m)
@@ -61,14 +61,14 @@ mob
 
 		guard
 			wander_distance = 0
-			base_basespeed = 3
+			base_effectivespeed = 3
 
 			health = 60
 			max_health = 60
 
-			basepower = 8
-			basespeed = 10
-			basedefense = 5
+			effectivepower = 8
+			effectivespeed = 10
+			effectivedefense = 5
 
 			abilities = list(new /Ability/EnemyAttack())
 
@@ -105,6 +105,23 @@ mob
 
 				if(choice == "Yes")
 					m.shopkeeper(src)
+
+		helpingshinigami
+			// this NPC is stationary so we override their ai() proc
+			// to make them do nothing.
+			ai()
+			interact(mob/m)
+				ai_pause()
+				if (m.class == "Soul")
+					var/choice = m.prompt("Do you wish to become a shinigami?", "Yes", "No")
+					if(choice == "Yes")
+						m.class = "Shinigami"
+						m.get_item(new /item/shinigarb())
+						m.base_state = "human2"
+				else
+					m << "You cant talk to me yet"
+
+				ai_play()
 
 Quest
 	KillThreeBlueOozes
