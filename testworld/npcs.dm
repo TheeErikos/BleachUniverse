@@ -10,9 +10,10 @@
 
 mob
 	npc
-		icon_state = "human2-standing"
 		invulnerable = 1
 		base_effectivespeed = 1
+		icon = 'mobs.dmi'
+		icon_state = "shinigaminpc1-standing"
 
 		npc1
 			interact(mob/m)
@@ -107,12 +108,13 @@ mob
 					m.shopkeeper(src)
 
 		helpingshinigami
-			// this NPC is stationary so we override their ai() proc
-			// to make them do nothing.
+			name = "Strange Shinigami"
+			base_state = "shinigaminpc1"
+			icon_state = "shinigaminpc1-standing"
 			ai()
 			interact(mob/m)
 				ai_pause()
-				if (m.class == "Soul")
+				if (m.class == "Soul" & m.playerlevel >= 25)
 					var/choice = m.prompt("Do you wish to become a shinigami?", "Yes", "No")
 					if(choice == "Yes")
 						m.class = "Shinigami"

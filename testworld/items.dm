@@ -51,24 +51,40 @@ item
 			m.remove(src)
 			m.effectivepower -= 5
 
-	zangetsu
-		name = "Zangetsu"
-		icon_state = "zangetsu"
-		description = "Ichigo Kurosaki's Shikai"
-		overlay_state = "zangetsu"
-		overlay_layer = 2
-		map_state = "zangetsu-map"
+	Shikai
+		name = "Shikai"
+		icon_state = "sword"
+		description = "None"
+		overlay_state = "sword"
+		overlay_layer = 1
+		map_state = "sword-map"
 
-		slot = RELEASE
+		slot = MAIN_HAND
 
 		equipped(mob/m)
+			src.name = m.release
+			src.overlay_state = m.release
 			m.overlay(src)
-			m.boostedpower = m.effectivepower*5
 
 		unequipped(mob/m)
 			m.remove(src)
-			m.boostedpower = 0
 
+/*	CustomSword
+		name = usr.swordname
+		icon_state = usr.swordname
+		description = "None"
+		overlay_state = usr.swordname
+		overlay_layer = 1
+		map_state = "[usr.swordname]-map"
+
+		slot = MAIN_HAND
+
+		equipped(mob/m)
+			m.overlay(src)
+
+		unequipped(mob/m)
+			m.remove(src)
+*/
 	dagger
 		name = "Dagger"
 		icon_state = "dagger"

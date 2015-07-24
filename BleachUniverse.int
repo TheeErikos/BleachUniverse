@@ -1,11 +1,11 @@
 // BEGIN_INTERNALS
 /*
-LAST_COMPILE_TIME: 1437617529
-DIR: Icons Icons\Human Icons\InvertHuman Icons\Shinigami testworld Lib 
+LAST_COMPILE_TIME: 1437702364
+DIR: Icons Icons\Shinigami testworld Lib External 
 AUTO_FILE_DIR: ON
 MAP_ICON_TYPE: 0
 LAST_COMPILE_VERSION: 507.1280
-WINDOW: Icons\Human\player-human.dmi;Icons\Human\player-soul.dmi;testworld\mobs.dm;testworld\statcheck.dm;testworld\abilities.dm;combat.dm;player-saving.dm;testworld\testarea.dmm;Icons\Shinigami\ShinigamiGarb.dmi;testworld\moboverlay.dmi;testworld\items.dm;testworld\items.dmi;testworld\npcs.dm
-FILE: testworld\npcs.dm
+WINDOW: testworld\turfs.dm;C:\Users\Bradley\Documents\BYOND\lib\forum_account\autojoining\autojoining.dm;testworld\walls.dmi;testworld\turfs.dmi;testworld\buildings.dmi;testworld\mobs.dm;hud-mob-selection.dm;testworld\conditions.dm;effects-visual.dm;testworld\npcs.dm;Icons\Shinigami\ShinigamiNPC1.dmi;testworld\mobs.dmi;player-targeting.dm;player-leveling.dm;testworld\enemies.dm;player-overlays.dm;enemy-ai.dm;testworld\statcheck.dm;testworld\testarea.dmm;testworld\moboverlay.dmi;events.dm;player-saving.dm;player-procs.dm;testworld\items.dm;Icons\Shinigami\ShinigamiGarb.dmi;testworld\abilities.dm
+FILE: testworld\mobs.dm
 */
 // END_INTERNALS

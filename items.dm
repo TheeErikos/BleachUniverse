@@ -55,6 +55,7 @@ item
 			count = quantity
 
 	proc
+
 		// this is called when an item is equipped
 		equipped(mob/m)
 

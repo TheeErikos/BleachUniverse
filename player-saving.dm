@@ -108,6 +108,7 @@ client
 				m.loc = null
 				m.overlays = null
 				m.bank = bank
+				m.music("mainmenu.wav")
 
 				for(var/slot in m.equipment)
 					var/item/i = m.equipment[slot]

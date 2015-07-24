@@ -35,13 +35,24 @@ mob
 		check_level()
 			while(experience >= experience_needed)
 				level += 1
+				get_level()
 				level_up()
 
 		level_up()
 			experience_needed = level * 5
+			usr.talentpoint += 10
 
 		gain_souls(m)
 			set_souls(souls + m)
 
 		set_souls(m)
 			souls = m
+
+		get_level()
+			usr.playerlevel = level
+
+		get_level_skills()
+			if (usr.class == "Shinigami" & usr.playerlevel >= 100)
+				usr.abilities += new /Ability/ShikaiRelease()
+			if (usr.class == "Shinigami" & usr.playerlevel >= 500)
+				usr.abilities += new /Ability/ShikaiRelease()

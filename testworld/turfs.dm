@@ -12,7 +12,7 @@ turf
 	icon = 'turfs.dmi'
 	icon_state = "grass-01"
 
-	New()
+/*	New()
 		..()
 		dir = dir8()
 
@@ -25,11 +25,19 @@ turf
 			var/n = autojoin16("density")
 			if(n < 15)
 				overlays += icon('walls.dmi', "outline-[n]")
-
+*/
 	wall_01
 		icon = 'walls.dmi'
 		density = 1
 		icon_state = "wall-01"
+
+	wall_02
+		density = 1
+		icon_state = "wallblack"
+
+	sand_01
+		density = 0
+		icon_state = "sand1"
 
 	stone_01
 		icon = 'walls.dmi'
@@ -63,3 +71,8 @@ turf
 
 	floor_02
 		icon_state = "floor-02"
+
+	piller01
+		density = 0
+		icon = 'buildings.dmi'
+		icon_state = "piller1"

@@ -147,6 +147,19 @@ Ability
 
 			user.noise('fire.wav', frequency = rand(0.7, 1.3))
 
+	ShikaiRelease
+		name = "Shikai Release"
+		icon_state = "ability-button-shikairelease"
+		description = "Call out your Zanpaktou's name and draw your inner strength out!"
+		animation = "attacking"
+		reiatsu_cost = 1000
+		cooldown = 0
+
+		effect(mob/user)
+			user.equip(new /item/Shikai())
+			user.cooldown("attack", 10)
+			user.noise('sonido.wav', frequency = rand(0.7, 1.3))
+
 	ShootArrow
 		name = "Shoot Arrow"
 		icon_state = "ability-button-shoot-arrow"

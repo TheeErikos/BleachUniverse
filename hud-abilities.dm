@@ -27,8 +27,12 @@ AbilityBar
 
 		owner = m
 
-		for(var/i = 1 to size)
+		for(var/i = 3 to size)
+			var/obj/q = add(1*Constants.ICON_WIDTH - Constants.ICON_WIDTH, 0, "ability-button", value = "q")
+			var/obj/e = add(2*Constants.ICON_WIDTH - Constants.ICON_WIDTH, 0, "ability-button", value = "e")
 			var/obj/o = add(i * Constants.ICON_WIDTH - Constants.ICON_WIDTH, 0, "ability-button", value = "[i]")
+			q.overlays += hud_label("<text align=center>Q", layer = layer + 3, pixel_y = 22)
+			e.overlays += hud_label("<text align=center>E", layer = layer + 3, pixel_y = 22)
 			o.overlays += hud_label("<text align=center>[i]", layer = layer + 3, pixel_y = 22)
 
 		cursor = add(0, 0, "", layer = layer + 1)
@@ -65,22 +69,22 @@ AbilityBar
 		else if(k == Constants.KEY_LEFT)
 			set_index(index - 1)
 
-		else if(k == "1")
+		else if(k == "q")
 			set_index(1)
 			select()
-		else if(k == "2")
+		else if(k == "e")
 			set_index(2)
 			select()
-		else if(k == "3")
+		else if(k == "1")
 			set_index(3)
 			select()
-		else if(k == "4")
+		else if(k == "2")
 			set_index(4)
 			select()
-		else if(k == "5")
+		else if(k == "3")
 			set_index(5)
 			select()
-		else if(k == "6")
+		else if(k == "4")
 			set_index(6)
 			select()
 

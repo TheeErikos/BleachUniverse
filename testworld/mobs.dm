@@ -42,34 +42,38 @@ mob
 	Stat()
 		..()
 		if(statpanel("Stats"))
-			stat("Level:", "[src.level]")
+			stat("Level:", "[src.playerlevel]")
 			stat("Health:","[src.health]/[src.max_health]")
 			stat("Reiatsu:","[src.reiatsu]/[src.max_reiatsu]")
 			stat("Power:", "[src.effectivepower]")
 			stat("Speed:", "[src.effectivespeed]")
 			stat("Defense:", "[src.effectivedefense]")
-			stat("Attack:", "[src.attack]")
-			stat("Agility:", "[src.agility]")
-			stat("Accuracy:", "[src.accuracy]")
+			stat("Attack:", "[src.effectiveattack]")
+			stat("Agility:", "[src.effectiveagility]")
+			stat("Accuracy:", "[src.effectiveaccuracy]")
 			stat("Race:", "[src.class]")
 			stat("injury", "[src.injury]/100")
 			stat("Souls", "[src.souls]")
+			stat("Talent Points:", "[src.talentpoint]")
 			stat("Alive Status: [src.deadstatus]")
 
 
 	var
 		class = ""
 		spritegender = ""
-		base_effectivespeed = 4
+		release = ""
+		base_effectivespeed = 6
+		playerlevel = 1
+		talentpoint = 0
 
-		effectivepower = 5
-		effectivespeed = 5
+		effectivepower = 10
+		effectivespeed = 10
 		mind = 1
-		effectivedefense = 1
+		effectivedefense = 10
 		resistance = 1
-		attack = 1
-		agility = 1
-		accuracy = 1
+		effectiveattack = 10
+		effectiveagility = 10
+		effectiveaccuracy = 10
 		injury = 0
 		isdead = 0
 		deadstatus = "Alive"
@@ -81,8 +85,15 @@ mob
 		boostedresistance = 0
 		boostedattack = 0
 
+		normalpower = 0
+		normalspeed = 0
+		normalmind = 0
+		normaldefense = 0
+		normalresistance = 0
+		normalattack = 0
 
 		tmp/slowed = 0
+		tmp/statup = ""
 
 		tmp/Overlay/weapon
 		tmp/Overlay/armor
@@ -94,7 +105,7 @@ mob
 			return "Level [level] [class]"
 
 	reiatsu_regen()
-		gain_reiatsu(5)
+		gain_reiatsu(50)
 
 	new_character()
 		loc = null
@@ -102,17 +113,11 @@ mob
 		class = "Human"//prompt("What character class would you like to be?", "Human")
 		spritegender = "Male"
 
-		loc = locate(25, 25, 1)
+		loc = locate(10, 10, 2)
 		camera.pixel_x = 24
 
 		// give the player some souls
 		set_souls(20)
-
-		// give the player a sword and equip it
-		equip(new /item/sword())
-
-		// give them armor, a helmet, and a dagger but don't equip them
-		get_item(new /item/hollowmask1())
 
 		// give them two health potions, these will appear
 		// in a single stack in their inventory
@@ -125,6 +130,13 @@ mob
 	Login()
 		..()
 		music('music.xm')
+		if (src.base_state == "")
+			src.base_state = "human2"
+
+	Logout()
+		world<<"[src.name] has Logged out"
+		client.save()
+		del src
 
 	action()
 		if(slowed)
@@ -155,22 +167,10 @@ mob
 			deadstatus = "Alive"
 		//loc = locate()//locate(17, 35, 1)
 
-mob
-	var
-		shadow_state = "shadow"
+	verb
+		SpendTalent()
+			statup = input("Which stat do you want to upgrade?", "Stats", statup) in list ("Power", "Defense", "Attack")
 
-	// regular mobs have shadows
-	Read()
-		..()
-		underlays = null
-		underlays += image(icon, icon_state = shadow_state, layer = layer - 0.5)
-
-	New()
-		..()
-		underlays = null
-		underlays += image(icon, icon_state = shadow_state, layer = layer - 0.5)
-
-// you can click on mobs to add or remove them from your party.
 client
 	Click(mob/m)
 		if(m == usr) return

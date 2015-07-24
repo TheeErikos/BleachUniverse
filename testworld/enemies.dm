@@ -72,7 +72,6 @@ mob
 		blue_ooze
 			base_state = "blue-ooze"
 			icon_state = "blue-ooze-standing"
-			shadow_state = "ooze-shadow"
 
 			effectivepower = 4
 			effectivespeed = 5
@@ -106,8 +105,6 @@ mob
 		green_ooze
 			base_state = "green-ooze"
 			icon_state = "green-ooze-standing"
-			shadow_state = "ooze-shadow"
-
 			effectivepower = 4
 			effectivespeed = 5
 			effectivedefense = 5

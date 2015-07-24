@@ -55,7 +55,6 @@
 #include "hud-quests.dm"
 #include "hud-shopkeeper.dm"
 #include "hud.dm"
-#include "hud_stats.dm"
 #include "items.dm"
 #include "medals.dm"
 #include "parties.dm"

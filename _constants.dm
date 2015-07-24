@@ -28,7 +28,7 @@ Constants
 			// used to open/close the loot and inventory panels
 			KEY_LOOT = "l"
 			KEY_INVENTORY = "i"
-			KEY_ABILITIES = "f"
+			KEY_ABILITIES = "x"
 			KEY_QUESTS = "q"
 			KEY_PARTY = "p"
 			KEY_INFO_BAR = "h"
@@ -42,7 +42,7 @@ Constants
 			KEY_DROP = "x"
 
 			// these enable or disable HUD elements
-			USE_ABILITY_BAR = 0
+			USE_ABILITY_BAR = 1
 			USE_INFO_BOX = 0
 			USE_INVENTORY = 1
 			USE_LOOT_WINDOW = 1
