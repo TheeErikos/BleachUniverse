@@ -1,9 +1,0 @@
-// BEGIN_INTERNALS
-/*
-DIR: icon-generation Lib 
-AUTO_FILE_DIR: ON
-MAP_ICON_TYPE: 0
-WINDOW: _constants.dm;hud-mob-selection.dm;framework-hud.dmi;player-options.dm;icon-generation\base-sword.dmi
-FILE: icon-generation\base-sword.dmi
-*/
-// END_INTERNALS
