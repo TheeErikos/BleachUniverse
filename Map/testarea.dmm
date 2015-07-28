@@ -5,7 +5,7 @@
 "e" = (/turf/Skilltree/Background,/turf/Skilltree/Up_Down,/area)
 "f" = (/Skilltree/SRess,/turf/Skilltree/Background,/area)
 "g" = (/Skilltree/Bankai,/turf/Skilltree/Background,/area)
-"h" = (/turf/wall_02,/area)
+"h" = (/turf/sand_01,/area)
 "i" = (/turf/sand_01,/area)
 "j" = (/turf/sand_01,/turf/piller01,/area)
 "k" = (/turf/sand_01,/area/huecomundo)

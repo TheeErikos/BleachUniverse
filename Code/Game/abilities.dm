@@ -153,40 +153,43 @@ Ability
 		description = "Call out your Zanpaktou's name and draw your inner strength out!"
 		animation = "attacking"
 		reiatsu_cost = 0
-		cooldown = 0
+		cooldown = 30
 
 		can_use(mob/user)
 			if (user.haszan == 0)
 				user.PlayerZanCreate()
-			if (user.eshi == 1)
+			if (user.erel == 1)
 				user.unequip(user.equipment[RELEASE])
 				return 0
-			else if(user.on_cooldown("ShikaiRlease", "attack"))
+			else if(user.on_cooldown("Shikai Release", "attack"))
 				return 0
 			else
 				return ..()
 
 		effect(mob/user)
-			user.equip(new /item/zangetsuShikai())
+			user.equip(new /item/+"[user.zstyle]Shikai"())
 			user.cooldown("attack", 10)
 			user.noise('sonido.wav', frequency = rand(0.7, 1.3))
 
 	BankaiRelease
 		name = "Bankai Release"
-		icon_state = "ability-button-bankairelease"
+		icon_state = "BankaiRelease"
 		description = "The final stage of the zanpaktou"
 		animation = "attacking"
 		reiatsu_cost = 500
-		cooldown = 0
+		cooldown = 30
 
 		can_use(mob/user)
-			if(user.on_cooldown("BankaiRlease", "attack"))
+			if (user.erel == 1)
+				user.unequip(user.equipment[RELEASE])
+				return 0
+			else if(user.on_cooldown("Bankai Release", "attack"))
 				return 0
 			else
 				return ..()
 
 		effect(mob/user)
-			user.equip(new /item/Bankai())
+			user.equip(new /item/+"[user.zstyle]Bankai"())
 			user.cooldown("attack", 10)
 			user.noise('bankai.wav', frequency = rand(0.7, 1.3))
 

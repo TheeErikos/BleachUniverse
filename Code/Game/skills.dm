@@ -11,13 +11,9 @@ Skill
 
 	Shikai
 		Click()
-			usr << "You clicked [src]"
-			usr.abilities += new /Ability/ShikaiRelease()
 
 	Bankai
 		Click()
-			usr << "You clicked [src]"
-			usr.abilities += new /Ability/BankaiRelease()
 
 	Ress
 		Click()

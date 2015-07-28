@@ -86,7 +86,6 @@
 #include "Code\Game\npcs.dm"
 #include "Code\Game\playerprocs.dm"
 #include "Code\Game\playerverbs.dm"
-#include "Code\Game\skills.dm"
 #include "Code\Game\skilltree.dm"
 #include "Code\Game\statcheck.dm"
 #include "Code\Game\turfs.dm"

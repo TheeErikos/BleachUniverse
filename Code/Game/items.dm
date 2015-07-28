@@ -23,7 +23,7 @@ var
 
 item
 	icon = 'items.dmi'
-	overlay_icon = 'moboverlay.dmi'
+	overlay_icon = 'clothes.dmi'
 	map_icon = 'items.dmi'
 
 	iron_bar
@@ -65,31 +65,43 @@ item
 
 		equipped(mob/m)
 			m.bamult += 0.5
-			m.eshi = 1
+			m.erel = 1
 			m.overlay(src)
+			view() << "[m.scallout], [m.sname]"
 
 		unequipped(mob/m)
 			m.bamult -= 0.5
-			m.eshi = 0
+			m.erel = 0
 			m.remove(src)
 
-	Bankai
-		name = "Bankai"
+	zangetsuBankai
+		name = "Zangetsu"
 		icon_state = "sword"
 		description = "Bankai"
-		overlay_state = "sword"
+		overlay_state = "zangetsubankai"
 		overlay_layer = 6
 		map_state = "sword-map"
 
 		slot = RELEASE
 
 		equipped(mob/m)
-			src.overlay_state = "[m.zstyle]bankai"
+			m.erel = 1
+			m.bamult += 2.5
+			m.bdmult += 1.5
+			m.bfmult += 2.0
+			m.bcmult += 1.5
+			m.bsmult += 2.0
 			view() << "<b>Bankai!</b>"
 			m.overlay(src)
 
 		unequipped(mob/m)
 			m.remove(src)
+			m.erel = 0
+			m.bamult -= 2.5
+			m.bdmult -= 1.5
+			m.bfmult -= 2.0
+			m.bcmult -= 1.5
+			m.bsmult -= 2.0
 
 /*	CustomSword
 		name = usr.swordname
@@ -181,7 +193,7 @@ item
 	AfroHair
 		name = "Afro Hair"
 		icon_state = ""
-		overlay_icon = 'Hairs.dmi'
+		overlay_icon = 'hairs.dmi'
 		description = "Simon likes it"
 		overlay_state = "shinigamihair2"
 		map_state = ""

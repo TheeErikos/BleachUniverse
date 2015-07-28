@@ -61,6 +61,8 @@ Ability
 
 mob
 	enemy
+		icon = 'enemies.dmi'
+		icon_state = "inverthuman-standing"
 		// when an enemy takes damage, make them target their attacker.
 		took_damage(damage, mob/attacker, Combat/combat)
 			..()

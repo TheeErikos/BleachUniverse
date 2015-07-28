@@ -12,7 +12,7 @@ mob
 	npc
 		invulnerable = 1
 		base_effectivespeed = 1
-		icon = 'mobs.dmi'
+		icon = 'npcs.dmi'
 		icon_state = "shinigaminpc1-standing"
 
 		npc1

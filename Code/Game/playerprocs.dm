@@ -6,13 +6,17 @@ mob/proc
 		usr.Activated_Skills += list("Shikai Release")
 
 	PlayerZanCreate()
-		usr.zcallout = input("What is your zanpakuto's callout?", "Text", zcallout)
-		usr.zname = input("What do you want your zanpakuto's name to be?", "Name", zname)
+		usr.scallout = input("What is your zanpakuto's callout?", "Text", scallout)
+		usr.sname = input("What do you want your zanpakuto's name to be?", "Name", sname)
 		usr.haszan = 1
 
 
 	CalcStats()
 		usr.boostedattack = round(usr.normalattack * usr.bamult)
+		usr.boosteddefense = round(usr.normaldefense * usr.bdmult)
+		usr.boostedcontrol = round(usr.normalcontrol * usr.bcmult)
+		usr.boostedfocus = round(usr.normalfocus * usr.bfmult)
+		usr.boostedspeed = round(usr.normalspeed * usr.bsmult)
 		usr.effectivespeed = round(normalspeed + boostedspeed)
 		usr.effectiveattack = round(normalattack + boostedattack)
 		usr.effectivedefense = round(normaldefense + boosteddefense)
@@ -32,6 +36,6 @@ mob/proc
 		usr.max_health = round(effectiveattack+effectivespeed+effectivedefense*1.5+effectiveattack+effectiveagility+effectiveaccuracy,1)
 
 	setmaxrei()
-		usr.max_reiatsu = 1000
+		usr.max_reiatsu = round(effectivecontrol*2+effectivefocus*2+level*5)
 
 	UnlockSkills()

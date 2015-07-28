@@ -27,8 +27,8 @@ AbilityMenu
 
 
 mob
-	icon = 'mobs.dmi'
-	base_state = "human2"
+	icon = 'player.dmi'
+	base_state = "player-human"
 
 	pwidth = 16
 	pheight = 16
@@ -62,11 +62,6 @@ mob
 			setmaxrei()
 			CalcStats()
 
-		if(statpanel("Skills"))
-			stat("Skills You've obtained")
-			for(var/Skill/S in contents)
-				stat("",S)
-
 
 	var
 		class = ""
@@ -80,13 +75,11 @@ mob
 		haszan = 0
 		hasres = 0
 		hasmask = 0
-		eshi = 0
-		eban = 0
-		eress = 0
+		erel = 0
 		emask = 0
 		zstyle = "zangetsu"
-		zcallout = ""
-		zname = ""
+		scallout = ""
+		sname = ""
 		rstyle = ""
 		rcallout = ""
 		rname = ""
@@ -163,8 +156,6 @@ mob
 
 		// give the player some souls
 		set_souls(20)
-
-		equip(new /item/AfroHair())
 
 		// give them two health potions, these will appear
 		// in a single stack in their inventory

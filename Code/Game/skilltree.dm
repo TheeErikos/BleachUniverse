@@ -4,7 +4,7 @@ Skilltree
 
 	var
 		reqpoints = 0
-		tech_obtained = /Skill/
+		reqlevel = 0
 		unlocked_skills = list("Shikai Release")
 
 	Click()
@@ -15,8 +15,8 @@ Skilltree
 		else if( !(name in usr.Activated_Skills) )
 			usr <<"This skill is not available at this time."
 
-		else if(usr.Skill_Points < reqpoints)
-			usr << "You don't have the required skill points for this!"
+		else if(usr.Skill_Points < reqpoints || usr.level < reqlevel)
+			usr << "You don't have the requirements for this."
 
 		else if( alert("Obtain [name] for [reqpoints] points?","Skill Obtain","Yes","No") == "Yes")
 			usr << "You have obtained [name]!"
@@ -25,7 +25,6 @@ Skilltree
 				if( !(A in usr.Activated_Skills) )
 					usr.Activated_Skills += A
 			usr.Skill_Points = max(0, usr.Skill_Points - reqpoints)
-			usr.contents += new tech_obtained
 			usr.Refresh_Skilltree()
 
 
@@ -33,39 +32,34 @@ Skilltree
 		name = "Attack"
 		icon_state = "Attack"
 		reqpoints = 0
-		unlocked_skills = list("Defend")
-		tech_obtained = /Skill/Attack
 
 	Defend
 		name = "Defend"
 		icon_state = "Defence"
 		reqpoints = 0
-		tech_obtained = /Skill/Defend
 
 	Shikai
 		name = "Shikai Release"
 		icon_state = "ShikaiRelease"
 		reqpoints = 25
-		unlocked_skills = list("Bankai")
-		tech_obtained = /Skill/Shikai
+		reqlevel = 100
+		unlocked_skills = list("Bankai Release")
 
 	Bankai
 		name = "Bankai Release"
 		icon_state = "BankaiRelease"
 		reqpoints = 150
-		tech_obtained = /Skill/Bankai
+		reqlevel = 300
 
 	Ress
 		name = "Resurrección"
 		icon_state = "Ress"
 		reqpoints = 0
-		tech_obtained = /Skill/Ress
 
 	SRess
 		name = "Segunda De Resurrección Etapa"
 		icon_state = "SRess"
 		reqpoints = 0
-		tech_obtained = /Skill/SRess
 
 turf
 	Skilltree

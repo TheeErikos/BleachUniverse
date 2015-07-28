@@ -1,11 +1,11 @@
 // BEGIN_INTERNALS
 /*
-LAST_COMPILE_TIME: 1438051149
-DIR: Code Code\Game Icons Icons\Zanpakutou\Zangetsu 
+LAST_COMPILE_TIME: 1438102197
+DIR: Code Code\Game Icons Icons\Zanpakutou\Zangetsu Map 
 AUTO_FILE_DIR: ON
 MAP_ICON_TYPE: 0
 LAST_COMPILE_VERSION: 507.1280
-WINDOW: Code\Game\abilities.dm;Code\Game\playerverbs.dm;Code\Game\mobs.dm;Code\framework-effects.dmi;Code\framework-hud.dmi;Map\testarea.dmm;Code\Game\npcs.dm;Code\Game\combat.dm;Code\Game\enemies.dm;Code\Game\playerprocs.dm;Code\_world.dm
-FILE: Code\Game\playerverbs.dm
+WINDOW: Code\Game\abilities.dm;Code\Game\playerverbs.dm;Code\Game\mobs.dm;Code\framework-effects.dmi;Code\framework-hud.dmi;Icons\items.dmi;Icons\medals.dmi;Icons\player.dmi;Icons\enemies.dmi;Icons\clothes.dmi;Icons\buildings.dmi;Icons\releases.dmi;Code\_constants.dm;Code\_world.dm
+FILE: Icons\player.dmi
 */
 // END_INTERNALS
