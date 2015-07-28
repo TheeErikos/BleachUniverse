@@ -178,9 +178,10 @@ item
 			m.remove(src)
 			m.effectivedefense -= 4
 
-	shinigamihair2
+	AfroHair
 		name = "Afro Hair"
 		icon_state = ""
+		overlay_icon = 'Hairs.dmi'
 		description = "Simon likes it"
 		overlay_state = "shinigamihair2"
 		map_state = ""
@@ -196,7 +197,7 @@ item
 			m.remove(src)
 
 
-	shinigarb
+	ShinigamiRobe
 		name = "Shinigami Robe"
 		icon_state = "shinirobe"
 		description = "Worn by shinigami"

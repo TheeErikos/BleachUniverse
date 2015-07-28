@@ -39,7 +39,7 @@ Constants
 			KEY_TARGET_NON_ENEMIES = "shift"
 			KEY_CHAT = "return"
 			KEY_DELETE = "delete"
-			KEY_DROP = "x"
+			KEY_DROP = "z"
 
 			// these enable or disable HUD elements
 			USE_ABILITY_BAR = 1
@@ -67,14 +67,14 @@ Constants
 
 			// the info box appears after you've been standing
 			// still for two seconds.
-			INFO_BOX_DELAY = 10
+			INFO_BOX_DELAY = 50
 			// the size of an icon in pixels
 			ICON_WIDTH = 32
 			ICON_HEIGHT = 32
 
 			// the size of the map's display area in tiles
-			VIEW_WIDTH = 20
-			VIEW_HEIGHT = 15
+			VIEW_WIDTH = 18
+			VIEW_HEIGHT = 16
 
 			// Bit flags that correspond to the different teams a mob
 			// can belong to. The library only defines two teams, players

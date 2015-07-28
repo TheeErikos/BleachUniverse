@@ -114,12 +114,12 @@ mob
 			ai()
 			interact(mob/m)
 				ai_pause()
-				if (m.class == "Soul" & m.playerlevel >= 25)
+				if (m.class == "Soul" & m.level >= 25)
 					var/choice = m.prompt("Do you wish to become a shinigami?", "Yes", "No")
 					if(choice == "Yes")
 						SetRaceShinigami(m)
 				else
-					m << "You cant talk to me yet"
+					m << "<b>You cant talk to me yet!<b/>"
 
 				ai_play()
 

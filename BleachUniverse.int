@@ -1,11 +1,11 @@
 // BEGIN_INTERNALS
 /*
-LAST_COMPILE_TIME: 1437955227
-DIR: Code Code\Game Icons Icons\Human Icons\Zanpakutou Icons\Zanpakutou\Zangetsu Map 
+LAST_COMPILE_TIME: 1438051149
+DIR: Code Code\Game Icons Icons\Zanpakutou\Zangetsu 
 AUTO_FILE_DIR: ON
 MAP_ICON_TYPE: 0
 LAST_COMPILE_VERSION: 507.1280
-WINDOW: Code\Game\interface.dmf;Code\player-options.dm;Icons\Human\player-human.dmi;Code\Game\abilities.dm;Code\Game\playerverbs.dm;Code\Game\mobs.dm;Code\framework-effects.dmi;Code\framework-hud.dmi;Map\testarea.dmm;Code\Game\playerprocs.dm;Code\Game\items.dm;Code\Game\medals.dm;Code\_notes.dm;Code\Game\combat.dm;Code\_constants.dm;Code\_world.dm;Code\player-chat.dm;Code\Game\custom-hud.dm;Code\hud-info.dm;Code\hud_stats.dm;Code\Game\enemies.dm;Code\Game\npcs.dm;Code\Game\skillhandler.dm;Code\player-leveling.dm;Code\items.dm;Icons\moboverlay.dmi;Code\hud-inventory.dm;Code\hud-shopkeeper.dm;Code\player-inventory.dm;Code\player-procs.dm
-FILE: Code\Game\abilities.dm
+WINDOW: Code\Game\abilities.dm;Code\Game\playerverbs.dm;Code\Game\mobs.dm;Code\framework-effects.dmi;Code\framework-hud.dmi;Map\testarea.dmm;Code\Game\npcs.dm;Code\Game\combat.dm;Code\Game\enemies.dm;Code\Game\playerprocs.dm;Code\_world.dm
+FILE: Code\Game\playerverbs.dm
 */
 // END_INTERNALS

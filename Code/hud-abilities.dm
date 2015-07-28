@@ -55,12 +55,9 @@ AbilityBar
 				if(!q||!e)
 					o.icon = Constants.HUD_ICON
 					o.icon_state = "ability-button"
-				else if (q)
+				else if (!q)
 					o.icon = q.icon
 					o.icon_state = q.icon_state
-				else if (e)
-					o.icon = e.icon
-					o.icon_state = e.icon_state
 
 	key_down(k, client/c)
 

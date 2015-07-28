@@ -76,3 +76,4 @@ turf
 		density = 1
 		icon = 'buildings.dmi'
 		icon_state = "piller1"
+

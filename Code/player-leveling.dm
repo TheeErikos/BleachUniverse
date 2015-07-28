@@ -34,18 +34,17 @@ mob
 		check_level()
 			while(experience >= experience_needed)
 				level += 1
-				get_level()
 				level_up()
 
 		level_up()
-			experience_needed = level * 1337
-			usr.talentpoint += 2
+			experience_needed = level*1337
+			usr.talentpoint += 4
+			usr.Skill_Points += 1
+			usr.UnlockSkills()
+			experience = 0
 
 		gain_souls(m)
 			set_souls(souls + m)
 
 		set_souls(m)
 			souls = m
-
-		get_level()
-			usr.playerlevel = level

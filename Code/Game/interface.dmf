@@ -82,9 +82,9 @@ window "default"
 		right-click = false
 		saved-params = "is-checked"
 		on-size = ""
-		text = "Upgrade"
+		text = "Skilltree"
 		image = ""
-		command = "SpendTalent"
+		command = "SkillTree"
 		is-flat = false
 		stretch = false
 		is-checked = false
@@ -109,7 +109,7 @@ window "default"
 		drop-zone = false
 		right-click = false
 		saved-params = "is-checked"
-		on-size = ""
+		on-size = "SpendTalent"
 		text = "Train"
 		image = ""
 		command = ""
@@ -196,7 +196,7 @@ window "default"
 		on-size = ""
 		text = "GM"
 		image = ""
-		command = ""
+		command = "PlayerHairChange"
 		is-flat = false
 		stretch = false
 		is-checked = false
@@ -449,7 +449,7 @@ window "default"
 		image = ""
 	elem "map"
 		type = MAP
-		pos = 0,0
+		pos = 0,-7
 		size = 848x791
 		anchor1 = 0,0
 		anchor2 = 100,100
@@ -462,9 +462,9 @@ window "default"
 		is-disabled = false
 		is-transparent = false
 		is-default = true
-		border = sunken
+		border = none
 		drop-zone = true
-		right-click = true
+		right-click = false
 		saved-params = "icon-size"
 		on-size = ""
 		icon-size = 0

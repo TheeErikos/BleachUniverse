@@ -49,22 +49,32 @@ mob
 			stat("Reiatsu:","[src.reiatsu]/[src.max_reiatsu]")
 			stat("Speed:", "[src.effectivespeed]")
 			stat("Attack:", "[src.normalattack] ([src.effectiveattack])")
-			stat("Defense:", "[src.effectivedefense]")
-			stat("Focus:", "[src.effectivefocus]")
-			stat("Control:", "[src.effectivecontrol]")
+			stat("Defense:", "[src.normaldefense] ([src.effectivedefense])")
+			stat("Focus:", "[src.normalfocus] ([src.effectivefocus])")
+			stat("Control:", "[src.normalcontrol] ([src.effectivecontrol])")
 			stat("Race:", "[src.class]")
-			stat("injury", "[src.injury]/100")
+			stat("injury", "[src.injury]/[src.max_injury]")
 			stat("Souls", "[src.souls]")
 			stat("Talent Points:", "[src.talentpoint]")
+			stat("Skill Points:", "[src.Skill_Points]")
 			stat("Soul Status: [src.deadstatus]")
 			setmaxhp()
 			setmaxrei()
 			CalcStats()
 
+		if(statpanel("Skills"))
+			stat("Skills You've obtained")
+			for(var/Skill/S in contents)
+				stat("",S)
+
 
 	var
 		class = ""
 		spritegender = ""
+
+		Activated_Skills = list()
+		Learned_Skills = list()
+		tmp/Skill_Tree = 0
 
 
 		haszan = 0
@@ -82,8 +92,8 @@ mob
 		rname = ""
 
 		base_effectivespeed = 6
-		playerlevel = 1
 		talentpoint = 0
+		Skill_Points = 0
 
 		effectiveattack = 0
 		effectivespeed = 0
@@ -96,6 +106,8 @@ mob
 		max_injury = 100
 		isdead = 0
 		deadstatus = "Alive"
+		hairstyle = ""
+		haircolor as color
 
 		tmp/boostedattack = 0
 		tmp/boostedspeed = 0
@@ -152,7 +164,7 @@ mob
 		// give the player some souls
 		set_souls(20)
 
-		equip(new /item/shinigamihair2())
+		equip(new /item/AfroHair())
 
 		// give them two health potions, these will appear
 		// in a single stack in their inventory
@@ -164,12 +176,11 @@ mob
 
 	Login()
 		..()
-		music('music.xm')
 		if (src.base_state == "")
 			src.base_state = "human2"
 
 	Logout()
-		world<<"[src.name] has Logged out"
+		world << "[src.name] has Logged out"
 		client.save()
 		del src
 
@@ -198,17 +209,28 @@ mob
 			deadstatus = "Dead"
 		else
 			deadstatus = "Alive"
-		//loc = locate()//locate(17, 35, 1)
+		//loc = locate(25, 25, 1)
 
 	verb
 
-		Levelup2()
-			gmnumber = input("How much experience do you want?", "GM WINDOW", gmnumber)
-			usr.gain_experience(gmnumber)
+		Levelup2(mob/m)
+			gmnumber = input("What level do you want to set to?", "GM WINDOW", gmnumber)
+			src.level = gmnumber
+			m.level_up()
 
+		KillMob(mob/m)
+			m.injury = m.max_injury
+			m.died()
+			respawned()
+
+		GiveSkillPoints(mob/m)
+			m.Skill_Points += input("How many skill points does this mob want?", "Number", m.Skill_Points)
 
 
 client
+
+	perspective = EDGE_PERSPECTIVE | EYE_PERSPECTIVE
+
 	Click(mob/m)
 		if(m == usr) return
 
@@ -220,3 +242,4 @@ client
 				usr.party.remove_player(m)
 			else
 				usr.party.add_player(m)
+		..()

@@ -11,7 +11,7 @@ var
 	Options/Options = new()
 
 world
-	view = "15x15"
+	view = "18x16"
 	mob = /mob/temporary
 
 client
@@ -34,3 +34,4 @@ Options
 		prompt_continue_message = "<text align=center>Press the Space Bar to continue.</text>"
 
 		title_screen = "title-screen"
+

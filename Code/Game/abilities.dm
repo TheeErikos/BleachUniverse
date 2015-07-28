@@ -149,7 +149,7 @@ Ability
 
 	ShikaiRelease
 		name = "Shikai Release"
-		icon_state = "ability-button-shikairelease"
+		icon_state = "ShikaiRelease"
 		description = "Call out your Zanpaktou's name and draw your inner strength out!"
 		animation = "attacking"
 		reiatsu_cost = 0

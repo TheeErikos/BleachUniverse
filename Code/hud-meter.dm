@@ -88,9 +88,9 @@ HealthMeter
 
 		// create the label
 		var/obj/o = add(0, 0, "health")
-		o.overlays += hud_label("<text align=left>Health", layer = layer, pixel_y = 5)
+		o.overlays += hud_label("<text align=center>SP", layer = layer, pixel_y = 5)
 
-		pos(8, Constants.VIEW_HEIGHT * Constants.ICON_HEIGHT - 24)
+		pos(8, Constants.VIEW_HEIGHT * Constants.ICON_HEIGHT - 28)
 
 ManaMeter
 	parent_type = /HudMeter
@@ -100,7 +100,7 @@ ManaMeter
 
 		// create the label
 		var/obj/o = add(0, 0, "reiatsu")
-		o.overlays += hud_label("<text align=left>Rei", layer = layer, pixel_y = 5)
+		o.overlays += hud_label("<text align=center>Rei", layer = layer, pixel_y = 5)
 
 		pos(8, Constants.VIEW_HEIGHT * Constants.ICON_HEIGHT - 40)
 
