@@ -35,7 +35,7 @@ mob
 			if(overlay)
 				overlay.Hide()
 
-	overlay(item/item)
+	overlay(item/item, setcolor as color)
 
 		if(!istype(item))
 			return ..()
@@ -51,7 +51,7 @@ mob
 			overlay = ..(item.overlay_icon, "")
 			equipment_overlays[item.slot] = overlay
 
-		overlay.base_state = item.overlay_state
+		overlay.base_state = item.overlay_state + setcolor
 		overlay.Layer(layer + item.overlay_layer)
 		overlay.Show()
 

@@ -109,10 +109,10 @@ window "default"
 		drop-zone = false
 		right-click = false
 		saved-params = "is-checked"
-		on-size = "SpendTalent"
+		on-size = ""
 		text = "Train"
 		image = ""
-		command = ""
+		command = "SpendTalent"
 		is-flat = false
 		stretch = false
 		is-checked = false
@@ -224,7 +224,7 @@ window "default"
 		on-size = ""
 		text = "Bug"
 		image = ""
-		command = "BugButton"
+		command = "report-bug"
 		is-flat = false
 		stretch = false
 		is-checked = false

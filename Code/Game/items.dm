@@ -35,24 +35,21 @@ item
 		count = 5
 		description = "Used for crafting\nThis\nis\na long\ndescription"
 
-	sword
-		name = "Sword"
-		icon_state = "sword"
-		description = "+5 Power"
-		overlay_state = "sword"
-		overlay_layer = 2
-		map_state = "sword-map"
+	shirt1
+		name = "Short Length Shirt"
+		icon_state = "shirt1"
+		description = "A generic shirt for everyone to use!"
+		overlay_state = "shirt1"
+		overlay_layer = 1
+		map_state = "shirt1"
 
-		slot = MAIN_HAND
+		slot = UPPER_BODY
 
-		// make the sword actually give you +5 effectiveattack
 		equipped(mob/m)
 			m.overlay(src)
-			m.effectiveattack += 5
 
 		unequipped(mob/m)
 			m.remove(src)
-			m.effectiveattack -= 5
 
 	zangetsuShikai
 		name = "Zangetsu"

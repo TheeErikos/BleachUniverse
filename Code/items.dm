@@ -111,6 +111,7 @@ item
 mob
 	var
 		list/equipment
+		setcolor as color
 
 	proc
 		equip(item/item, slot = null)

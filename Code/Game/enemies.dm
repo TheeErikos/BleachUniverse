@@ -98,9 +98,6 @@ mob
 				if(prob(50))
 					new /item/health_potion(src)
 
-				if(prob(25))
-					new /item/sword(src)
-
 				..()
 
 		// green oozes are just like blue ones except they have a poison attack too.
@@ -130,33 +127,30 @@ mob
 				if(prob(100))
 					new /item/health_potion(src)
 
-				if(prob(25))
-					new /item/sword(src)
-
 				..()
 
 		invertedHuman
-			base_state = "inverthuman"
-			icon_state = "inverthuman-standing"
+			base_state = "demihollow"
+			icon_state = "demihollow-standing"
 
-			effectiveattack = 10
-			effectivespeed = 3
-			effectivedefense = 10
+			effectiveattack = 5
+			effectivespeed = 1
+			effectivedefense = 5
 
-			health = 25
-			max_health = 25
+			health = 20
+			max_health = 20
 
-			base_effectivespeed = 1
+			base_effectivespeed = 3
 
 			abilities = list(new /Ability/EnemyAttack())
 
 			New()
 				..()
-				souls = rand(3, 12)
+				souls = rand(1, 2)
 				experience = rand(1000, 5000)
 
 			// we override the died proc to give enemies a chance to drop items
 			died()
-				noise('splat.wav', frequency = 0.6)
+				noise('demihollowdeath.wav', frequency = 0.6)
 				spawn(100) respawn()
 				..()

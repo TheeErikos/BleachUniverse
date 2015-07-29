@@ -1,6 +1,6 @@
 var
 
-		list/developers = list("none")
+		list/developers = list("dagilbert", "shadowrushed")
 
 		bug_reports as text
 
@@ -8,10 +8,6 @@ mob/verb
 	HelpButton()
 		set hidden = 1
 		usr << "[usr.name], clicked the help button (Yet to be made)"
-
-	BugButton()
-		set hidden = 1
-		usr << "[usr.name], clicked the bug button (Yet to be made)"
 
 	RestButton()
 		set hidden = 1

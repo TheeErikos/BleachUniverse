@@ -27,4 +27,3 @@ CraftingAbility
 		required_object = /obj/anvil
 
 		// it turns the iron bars into a sword
-		product = /item/sword

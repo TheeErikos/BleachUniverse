@@ -161,6 +161,7 @@ mob
 		// in a single stack in their inventory
 		get_item(new /item/health_potion())
 		get_item(new /item/health_potion())
+		equip(get_item (new /item/shirt1()))
 
 		// give the player some attacks
 		abilities += new /Ability/Cleave()
