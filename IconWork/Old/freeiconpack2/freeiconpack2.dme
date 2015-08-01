@@ -1,0 +1,16 @@
+// BEGIN_INTERNALS
+// END_INTERNALS
+// BEGIN_FILE_DIR
+#define FILE_DIR .
+#define FILE_DIR "32x32"
+#define FILE_DIR "32x32/AngbandTk"
+#define FILE_DIR "32x32/Items"
+#define FILE_DIR "32x32/Monsters"
+#define FILE_DIR "54x54"
+#define FILE_DIR "54x54/More"
+#define FILE_DIR "54x54/Terrain"
+// END_FILE_DIR
+// BEGIN_PREFERENCES
+// END_PREFERENCES
+// BEGIN_INCLUDE
+// END_INCLUDE
